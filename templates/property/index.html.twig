@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1 class="title">{{ pageTitle }}</h1>
+
+    <div class="field has-addons">
+        <div class="control">
+            <a class="button is-small " href=" {{ path("property_new") }}">New Property</a>
+        </div>
+    </div>
+
+    {% set records = properties %}
+
+        <table class="table is-fullwidth is-hoverable is-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Options</tthd>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for record in records %}
+                    
+                    <tr>
+                        <th>{{ record.id }}</th>
+                        <td>{{ record.title }}</td>
+                        <td>
+                            <a class="button is-small" href="{{ path("property_show", {'id': record.id}) }}">Show</a>
+                            <a class="button is-small" href="{{ path("property_edit", {'id': record.id}) }}">Edit</a>
+                        </td>
+                    </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+{% endblock %}
+

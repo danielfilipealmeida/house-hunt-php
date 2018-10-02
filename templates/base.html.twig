@@ -1,0 +1,43 @@
+{% from 'breadcrumb.html.twig' import breadcrumb %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}House Hunt{% endblock %}</title>
+        <link rel="stylesheet" href="/css/bulma.min.css">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        <img src="/images/Logo.png" height="50" />
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href=" {{ path("property") }}">
+                        Properties
+                        </a>
+                    </div>
+                </div>
+            <nav>
+        </div>
+
+        {{ breadcrumb(breadcrumb) }}
+
+        <div class="section">
+            <div class="container">
+
+                {% block body %}{% endblock %}
+
+            </div>
+        </div>
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
+
+

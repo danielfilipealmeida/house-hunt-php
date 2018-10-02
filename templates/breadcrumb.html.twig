@@ -1,0 +1,19 @@
+{% macro printBreadcrumbLink(title, url) %}
+{% spaceless %}
+        <a href='{{url}}'>{{ title }}</a>
+{% endspaceless %}
+{% endmacro %}
+
+{% macro breadcrumb(breadcrumbData) %}
+    {% import _self as funcs %}
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <ul>
+                {% for title,url in breadcrumbData%}
+                <li>{{ funcs.printBreadcrumbLink(title, url) }}</li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+{% endmacro %}
+
