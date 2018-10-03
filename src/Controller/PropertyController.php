@@ -55,14 +55,21 @@ class PropertyController extends AbstractController
      *
      * @return void
      */
-    public function edit(Request $request, Property $property)
-    {
+    public function edit(
+        Property $property, 
+        Request $request, 
+        Breadcrumb $breadcrumb
+    ) {
         if (!$property) {
             throw $this->createNotFoundException('No property found for id ' . $id);
         }
 
         $form = $this->createFormForProperty($property);
         
+
+        $breadcrumb->setPageTitle($property->getTitle());
+        $breadcrumb->add('All Properties', $this->generateUrl('property'));
+
         $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) {
@@ -75,7 +82,8 @@ class PropertyController extends AbstractController
             return $this->redirectToRoute(
                 'property_show',
                 [
-                    'id' => $property->getId()
+                    'id' => $property->getId(),
+                    'breadcrumb' => $breadcrumb->get()
                 ]
             );
         }
@@ -84,6 +92,7 @@ class PropertyController extends AbstractController
             'property/form.html.twig',
             [
                 'form' => $form->createView(),
+                'breadcrumb' => $breadcrumb->get()
             ]
         );
     }
@@ -93,13 +102,17 @@ class PropertyController extends AbstractController
      *
      * @return void
      */
-    public function new(Request $request)
-    {
+    public function new(
+        Breadcrumb $breadcrumb,
+        Request $request
+    ) {
         $property = new Property();
         
         $form = $this->createFormForProperty($property);
 
         $form->handleRequest($request);
+
+        $breadcrumb->add('All Properties', $this->generateUrl('property'));
 
         if ($form->isSubmitted() && $form->isValid()) {
             $property = $form->getData();
@@ -116,10 +129,13 @@ class PropertyController extends AbstractController
             );
         }
 
+        $breadcrumb->setPageTitle("New Property");
+        
         return $this->render(
             'property/form.html.twig',
             [
                 'form' => $form->createView(),
+                'breadcrumb' => $breadcrumb->get()
             ]
         );
 

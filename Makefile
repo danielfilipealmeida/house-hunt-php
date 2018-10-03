@@ -1,4 +1,5 @@
 export PROJECT_IP = 127.0.0.1
+export MEMCACHED_PORT = 11211
 
 # Add the following 'help' target to your Makefile
 # And add help text after each target name starting with '\#\#'
@@ -73,9 +74,22 @@ start-php-server: ##@programming Starts the Symfony webserver
 	php bin/console server:start &
 .PHONY: start-php-server
 
+stop-php-server: ##@programming kills running Symfony webserver
+	kill -9 $(pgrep -f php)
+.PHONY: stop-php-server
+
+start-memcached: ##@programming Starts the Memcached server
+	memcached -o $(MEMCACHED_PORT) &
+.PHONY: start-memcached
+
+stop-memcached: ##@programming kills running Memcached server
+	kill -9 $(pgrep -f memcached)
+.PHONY: stop-memcached
+
 start: ##@programming Starts all servers
 	make start-mariadb
 	make start-php-server
+	make start-memcached
 .PHONY: start
 
 
