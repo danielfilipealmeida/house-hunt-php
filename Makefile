@@ -75,11 +75,11 @@ start-php-server: ##@programming Starts the Symfony webserver
 .PHONY: start-php-server
 
 stop-php-server: ##@programming kills running Symfony webserver
-	kill -9 $(pgrep -f php)
+	kill -9 $(pgrep -f php bin/console server:start)
 .PHONY: stop-php-server
 
 start-memcached: ##@programming Starts the Memcached server
-	memcached -o $(MEMCACHED_PORT) &
+	memcached -d -p $(MEMCACHED_PORT)
 .PHONY: start-memcached
 
 stop-memcached: ##@programming kills running Memcached server

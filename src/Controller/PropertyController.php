@@ -2,24 +2,37 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Property;
+use App\Service\Memcached;
+use App\Service\Breadcrumb;
+use Psr\Log\LoggerInterface;
+use Symfony\Component\Form\Form;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Form\Form;
-use App\Service\Breadcrumb;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class PropertyController extends AbstractController
 {
     /**
      * @Route("/property", name="property")
      */
-    public function index(Breadcrumb $breadcrumb)
-    {
+    public function index(
+        Breadcrumb $breadcrumb, 
+        LoggerInterface $logger,
+        Memcached $memcached
+    ) {
         $properties = $this->getDoctrine()->getRepository(Property::class)->findAll();
         $breadcrumb->setPageTitle('All Properties');
+
+        //$memcached = new \Memcached();
+        $memcached->addServer('localhost', 11211);
+        $memcached->set('foo', 10);
+
+
+        //$logger->info($memcached->get('foo'));
+        var_dump($memcached->get('foo'));
 
         return $this->render('property/index.html.twig', [
             'controller_name' => 'PropertyController',
