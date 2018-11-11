@@ -1,0 +1,3 @@
+parameters:
+    app.idealista.key: ''
+    app.idealista.secret: ''

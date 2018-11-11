@@ -62,36 +62,39 @@ help: ##@other Show this help.
 .PHONY: help
 
 
-start-mariadb: ##@programming Starts the database server
+start-mariadb: ##@servers Starts the database server
 	mysqld &
 .PHONY: start-mariadb
 
-stop-mariadb: ##@programming kills running database server
+stop-mariadb: ##@servers kills running database server
 	kill -9 $(pgrep -f mysqld)
 .PHONY: stop-mariadb
 
-start-php-server: ##@programming Starts the Symfony webserver
+start-php-server: ##@servers Starts the Symfony webserver
 	php bin/console server:start &
 .PHONY: start-php-server
 
-stop-php-server: ##@programming kills running Symfony webserver
+stop-php-server: ##@servers kills running Symfony webserver
 	kill -9 $(pgrep -f php bin/console server:start)
 .PHONY: stop-php-server
 
-start-memcached: ##@programming Starts the Memcached server
+start-memcached: ##@servers Starts the Memcached server
 	memcached -d -p $(MEMCACHED_PORT)
 .PHONY: start-memcached
 
-stop-memcached: ##@programming kills running Memcached server
+stop-memcached: ##@servers kills running Memcached server
 	kill -9 $(pgrep -f memcached)
 .PHONY: stop-memcached
 
-start: ##@programming Starts all servers
+start: ##@servers Starts all servers
 	make start-mariadb
 	make start-php-server
 	make start-memcached
 .PHONY: start
 
 
+unit-test: ##@testing Starts all servers
+	./bin/phpunit
+.PHONY: unit-test
 
 

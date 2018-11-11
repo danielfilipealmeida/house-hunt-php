@@ -27,12 +27,12 @@ class PropertyController extends AbstractController
         $breadcrumb->setPageTitle('All Properties');
 
         //$memcached = new \Memcached();
-        $memcached->addServer('localhost', 11211);
-        $memcached->set('foo', 10);
+        //$memcached->addServer('localhost', 11211);
+        //$memcached->set('foo', 10);
 
 
         //$logger->info($memcached->get('foo'));
-        var_dump($memcached->get('foo'));
+        //var_dump($memcached->get('foo'));
 
         return $this->render('property/index.html.twig', [
             'controller_name' => 'PropertyController',

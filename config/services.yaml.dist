@@ -6,10 +6,6 @@
 parameters:
     locale: 'en'
 
-imports:
-    - { resource: config.yaml }
-    
-
 services:
     # default configuration for services in *this* file
     _defaults:
@@ -33,18 +29,3 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
-
-    guzzle:
-        class: GuzzleHttp\Client
-
-    App\Service\Idealista:
-        arguments:
-            - '@App\Service\Memcached'
-            - '@guzzle'
-        calls:
-            - method: setKey
-              arguments:
-                    - '%app.idealista.key%'
-            - method: setSecret
-              arguments:
-                    - '%app.idealista.secret%'
