@@ -96,7 +96,9 @@ class Idealista {
      */
     public function getBearerCodeFromMemcached(): ?array
     {
-        return $this->memcached->get(self::TOKEN_KEY);
+        $memcacheResult = $this->memcached->get(self::TOKEN_KEY);
+        
+        return $memcacheResult ? $memcacheResult:null;
     }
 
     /**
@@ -219,7 +221,7 @@ class Idealista {
     public function setKey(string $key)
     {
         $this->key = $key;
-        var_dump($key);
+   
         return $this;
     }
 
@@ -263,8 +265,6 @@ class Idealista {
             $requestParams
         );
 
-        //var_dump(get_class($response));
-
         if (!$response || $response->getStatusCode() != 200) 
         {
             throw new \Exception('Error retrieving bearer code.');
@@ -279,7 +279,7 @@ class Idealista {
      * @param array $searchParameters
      * @return string
      */
-    public function getSearchParametersString($searchParameters): string
+    static public function getSearchParametersString($searchParameters): string
     {
         return join('&', array_map(
             function($value, string $key) {

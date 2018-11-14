@@ -67,7 +67,7 @@ start-mariadb: ##@servers Starts the database server
 .PHONY: start-mariadb
 
 stop-mariadb: ##@servers kills running database server
-	kill -9 $(pgrep -f mysqld)
+	kill -9 $$(pgrep -f mysqld)
 .PHONY: stop-mariadb
 
 start-php-server: ##@servers Starts the Symfony webserver
@@ -75,7 +75,7 @@ start-php-server: ##@servers Starts the Symfony webserver
 .PHONY: start-php-server
 
 stop-php-server: ##@servers kills running Symfony webserver
-	kill -9 $(pgrep -f php bin/console server:start)
+	kill -9 $$(pgrep -f php bin/console server:start)
 .PHONY: stop-php-server
 
 start-memcached: ##@servers Starts the Memcached server
@@ -83,7 +83,7 @@ start-memcached: ##@servers Starts the Memcached server
 .PHONY: start-memcached
 
 stop-memcached: ##@servers kills running Memcached server
-	kill -9 $(pgrep -f memcached)
+	kill -9 $$(pgrep -f memcached)
 .PHONY: stop-memcached
 
 start: ##@servers Starts all servers
@@ -92,6 +92,11 @@ start: ##@servers Starts all servers
 	make start-memcached
 .PHONY: start
 
+stop: ##@servers Kills all servers
+	make stop-memcached
+	make stop-mariadb
+	make stop-php-server
+.PHONY: stop
 
 unit-test: ##@testing Starts all servers
 	./bin/phpunit

@@ -37,6 +37,9 @@ services:
     guzzle:
         class: GuzzleHttp\Client
 
+    #doctrine.orm.entity_manager:
+    #    class: Doctrine\ORM\EntityManager
+
     App\Service\Idealista:
         arguments:
             - '@App\Service\Memcached'
@@ -48,3 +51,9 @@ services:
             - method: setSecret
               arguments:
                     - '%app.idealista.secret%'
+
+    App\Command\FetchFromIdealistaCommand:
+        arguments:
+            - '@App\Service\Idealista'
+            - '@doctrine.orm.entity_manager'
+            - '@App\Repository\SearchRepository'
