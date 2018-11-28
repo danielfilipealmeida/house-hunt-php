@@ -80,11 +80,11 @@ class FetchFromIdealistaCommand extends Command
         $result = $this->idealista->search($testParameterArray);
 
         $searchResult = new SearchResult();
-        $searchResult->setDate(new \DateTime())
+        $searchResult->setDate(new \DateTimeImmutable())
             ->setSearch(Idealista::getSearchParametersString($testParameterArray))
             ->setJson($result);
         
-        $this->entityManager-persist($searchResult);
-
+        $this->entityManager->persist($searchResult);
+        $this->entityManager->flush();
     }
 }

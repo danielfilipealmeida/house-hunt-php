@@ -4,8 +4,9 @@ export MEMCACHED_PORT = 11211
 #constants
 CONT_WEB=web
 CONT_DB=db
-DATABASE=house-hunt
+DATABASE=house_hunt
 DB_PASSWORD=passpass
+
 
 # Add the following 'help' target to your Makefile
 # And add help text after each target name starting with '\#\#'
@@ -68,54 +69,16 @@ help: ##@other Show this help.
 .PHONY: help
 
 
-#start-mariadb: ##@servers Starts the database server
-#	mysqld &
-#.PHONY: start-mariadb
-
-#stop-mariadb: ##@servers kills running database server
-#	kill -9 $$(pgrep -f mysqld)
-#.PHONY: stop-mariadb
-
-#start-php-server: ##@servers Starts the Symfony webserver
-#	php bin/console server:start &
-#.PHONY: start-php-server
-
-#stop-php-server: ##@servers kills running Symfony webserver
-#	kill -9 $$(pgrep -f php bin/console server:start)
-#.PHONY: stop-php-server
-
-#start-memcached: ##@servers Starts the Memcached server
-#	memcached -d -p $(MEMCACHED_PORT)
-#.PHONY: start-memcached
-
-#stop-memcached: ##@servers kills running Memcached server
-#	kill -9 $$(pgrep -f memcached)
-#.PHONY: stop-memcached
-
-
-#start: ##@servers Starts all servers
-#	make start-mariadb
-#	make start-php-server
-#	make start-memcached
-#.PHONY: start
-
-#stop: ##@servers Kills all servers
-#	make stop-memcached
-#	make stop-mariadb
-#	make stop-php-server
-#.PHONY: stop
-
-#unit-test: ##@testing Starts all servers
-#	./bin/phpunit
-#.PHONY: unit-test
-
-
-setup-doctrine: ##@doctrine Builds the project
+setup-doctrine: ##@doctrine Drops and re-creates the database with data
 	make dropdatabase
 	make console COM="doctrine:database:create"
-	make console COM="make:migration"
+	#make console COM="make:migration"
 	make console COM="doctrine:migrations:migrate"
 .PHONY: setup-doctrine
+
+create-migration: ##@doctrine Creates a new migration
+	make console COM="make:migration"
+.PHONY: create-migration
 
 build: ##@servers Builds the project
 	docker-compose build
@@ -124,6 +87,7 @@ build: ##@servers Builds the project
 setup: ##@servers Sets up all containers
 	make build
 	docker-compose up -d
+	make start
 	make setup-doctrine
 .PHONY: setup
 
@@ -144,7 +108,6 @@ reload: ##@servers Reloads all containers
 	make stop
 	make start
 .PHONY: reload
-
 
 cli: ##@servers Open a bash shell inside the container
 	docker-compose exec $(CONT_WEB) bash
@@ -182,6 +145,15 @@ mysql: ##@database Run a command inside the databse container
 	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) --database=$(DATABASE) -e "$(COM)"
 .PHONY: mysql
 
-dropdatabase: ##@database Run a command inside the databse container
-	make mysql COM="DROP DATABASE `$(DATABASE)`;"
-.dropdatabase: dbrun
+dropdatabase: ##@database Deletes the database
+	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) -e "DROP DATABASE IF EXISTS $(DATABASE);"
+.PHONY: dropdatabase
+
+
+createdatabase: ##@database Creates the database
+	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) -e "CREATE DATABASE IF NOT EXISTS $(DATABASE);"
+.PHONY: createdatabase
+
+fetchdata: ##@commands Use commands to fetch all data from APIs
+	make console COM="idealista:fetch"
+.PHONY: fetchdata
