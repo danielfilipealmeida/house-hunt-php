@@ -1,3 +1,4 @@
 {
-    "editor.tabCompletion": true
+    "editor.tabCompletion": true,
+    "git.ignoreLimitWarning": true
 }

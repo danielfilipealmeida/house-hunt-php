@@ -1,0 +1,25 @@
+version: '3'
+services:
+    web:
+        build: .
+        ports:
+            - "8080:80"
+        volumes:
+            - ./htdocs:/var/www/html
+            - ./docker/web/000-default.conf:/etc/apache2/sites-available/000-default.conf
+    db:
+        image:  mariadb
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: passpass
+            MYSQL_DATABASE: house-hunt
+        ports:
+            - "13306:3306"
+        #volumes:
+        #    - ./docker/mariadb/datadir:/var/lib/mysql
+            
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8081:8080

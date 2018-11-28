@@ -1,21 +1,21 @@
-###> symfony/framework-bundle ###
+ ###> symfony/framework-bundle ###
 /.env
-/public/bundles/
-/var/
-/vendor/
+/htdocs/public/bundles/
+/htdocs/var/
+/htdocs/vendor/
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
-.phpunit
-/phpunit.xml
+/htdocs.phpunit
+/htdocs/phpunit.xml
 ###< symfony/phpunit-bridge ###
 
 ###> symfony/web-server-bundle ###
-/.web-server-pid
+/htdocs/.web-server-pid
 ###< symfony/web-server-bundle ###
 
-node_modules/
+/htdocsnode_modules/
 
 .idea/
 
-config/config.yaml
+/htdocsconfig/config.yaml

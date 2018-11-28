@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1 class="title">New Search</h1>
+
+    <div class="field has-addons">
+        <div class="control">
+            <a class="button is-small " href=" {{ path("search") }}"><< Back to list</a>
+        </div>
+    </div>
+    
+    
+    
+
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+
+
+{% endblock %}
+
