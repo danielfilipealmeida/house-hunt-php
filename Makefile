@@ -1,5 +1,6 @@
-export PROJECT_IP = 127.0.0.1
-export MEMCACHED_PORT = 11211
+Dockerfileexport PROJECT_IP=127.0.0.1
+export MEMCACHED_PORT=11211
+export XDEBUG_CONFIG="idekey=VSCODE"
 
 #constants
 CONT_WEB=web
@@ -88,7 +89,7 @@ setup: ##@servers Sets up all containers
 	make build
 	docker-compose up -d
 	make start
-	make setup-doctrine
+	#make setup-doctrine
 .PHONY: setup
 
 clean: ##@servers Tears down all containers

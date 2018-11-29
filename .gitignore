@@ -6,7 +6,7 @@
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
-/htdocs.phpunit
+/htdocs/.phpunit
 /htdocs/phpunit.xml
 ###< symfony/phpunit-bridge ###
 
@@ -14,8 +14,9 @@
 /htdocs/.web-server-pid
 ###< symfony/web-server-bundle ###
 
-/htdocsnode_modules/
+/htdocs/node_modules/
 
 .idea/
 
-/htdocsconfig/config.yaml
+/htdocs/config/config.yaml
+

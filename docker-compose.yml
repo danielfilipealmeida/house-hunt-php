@@ -7,6 +7,9 @@ services:
         volumes:
             - ./htdocs:/var/www/html
             - ./docker/web/000-default.conf:/etc/apache2/sites-available/000-default.conf
+            - ./docker/web/php.ini:/usr/local/etc/php/php.ini
+        environment:
+            - XDEBUG_CONFIG=idekey=VSCODE
     db:
         image:  mariadb
         restart: always
