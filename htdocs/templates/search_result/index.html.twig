@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1 class="title">{{ pageTitle }}</h1>
+
+
+
+    {% set records = searchResults %}
+
+        <table class="table is-fullwidth is-hoverable is-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Date</th>
+                    <th>Summary</th>
+                     <th>Results</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+
+<!--
+
+   "elementList" => array:20 [▼
+      0 => array:29 [▼
+        "propertyCode" => "29350796"
+        "thumbnail" => "https://img3.idealista.pt/blur/WEB_LISTING/0/id.pro.pt.image.master/51/2a/b3/90499608.jpg"
+        "externalReference" => "0126/2017 OU CAS_899"
+        "numPhotos" => 12
+        "price" => 50000
+        "propertyType" => "chalet"
+        "operation" => "sale"
+        "size" => 13.8
+        "exterior" => false
+        "rooms" => 2
+        "bathrooms" => 1
+        "address" => "Faro"
+        "province" => "Faro"
+        "municipality" => "Faro"
+        "country" => "pt"
+        "latitude" => 37.028608
+        "longitude" => -7.934728
+        "showAddress" => false
+        "url" => "https://www.idealista.pt/imovel/29350796/"
+        "distance" => "1418"
+        "hasVideo" => false
+        "status" => "good"
+        "newDevelopment" => false
+        "priceByArea" => 3623
+        "detailedType" => array:1 [▶]
+        "suggestedTexts" => array:2 [▶]
+        "hasPlan" => false
+        "has3DTour" => false
+        "has360" => false
+        -->
+            <tbody>
+                {% for record in records %}
+                    <tr>
+                        <th>{{ record.id }}</th>
+                        <td>{{ record.date|date("Y-m-d") }}</td>
+                        <td>
+                            {% for item in record.json.summary %}
+                                <p>{{ item }}</p>
+                            {% endfor %}
+                        </td>
+                        <td>
+                        {{ record.json.elementList|length}} results found.                      
+                        </td>
+                        <td>
+                 {#
+                 <a class="button is-small" href="{{ path("searchresult_show", {'id': record.id}) }}">Show</a>
+                 #}       
+
+                  <a class="button is-small" href="{{ path("show_search_result", {'id': record.id}) }}">Show</a>
+                        </td>
+                    </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+{% endblock %}
+

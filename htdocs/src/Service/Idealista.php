@@ -3,20 +3,17 @@
 namespace App\Service;
 
 use GuzzleHttp\Client;
-use App\Service\Memcached;
 
-
-
-class Idealista {
-
-    private const TOKEN_KEY = "idealista-token";
-    private const BASE_URI = "https://api.idealista.com";
-    private const SEARCH_PATH = "/3.5/pt/search";
-    private const OAUTH_PATH = "/oauth/token";
+class Idealista
+{
+    private const TOKEN_KEY = 'idealista-token';
+    private const BASE_URI = 'https://api.idealista.com';
+    private const SEARCH_PATH = '/3.5/pt/search';
+    private const OAUTH_PATH = '/oauth/token';
     private const TIMEOUT = 60;
 
     /**
-     * Security Token
+     * Security Token.
      *
      * @var string
      */
@@ -47,9 +44,8 @@ class Idealista {
      */
     private $client;
 
-
     /**
-     * Constructor
+     * Constructor.
      *
      * @param Memcached $memcached
      */
@@ -65,47 +61,47 @@ class Idealista {
      * Return the headers for the request to the idealista API
      * This is used both for requesting a bearer code or to do actual requests to the API
      * When requesting the bearer code, `$credentials` are the user login creditians and `$isBearer` is `false` or unset.
-     * When doing an actual request, `$credentials` is actually the Bearer code and `$isBearer` must be `true`
+     * When doing an actual request, `$credentials` is actually the Bearer code and `$isBearer` must be `true`.
      *
      * @param string $credentials
-     * @param bool $isBearer
-     * 
+     * @param bool   $isBearer
+     *
      * @return array
      */
     public function getHeaders($credentials, $bearer = false): array
     {
         return [
             'Content-Type' => 'application/x-www-form-urlencoded;charset=UTF-8',
-            'Authorization' => ($bearer ? 'Bearer' : 'Basic') . ' ' . $credentials
+            'Authorization' => ($bearer ? 'Bearer' : 'Basic').' '.$credentials,
         ];
     }
 
     public function getCredentials(): string
     {
         if (!$this->credentials) {
-            $this->credentials = base64_encode($this->key . ':' . $this->secret);
+            $this->credentials = base64_encode($this->key.':'.$this->secret);
         }
 
         return $this->credentials;
     }
 
     /**
-     * Queries Memcached for a cached Bearer code
+     * Queries Memcached for a cached Bearer code.
      *
      * @return array
      */
     public function getBearerCodeFromMemcached(): ?array
     {
         $memcacheResult = $this->memcached->get(self::TOKEN_KEY);
-        
-        return $memcacheResult ? $memcacheResult:null;
+
+        return $memcacheResult ? $memcacheResult : null;
     }
 
     /**
-     * Get the Beare code from Idealista using the API
-     * 
+     * Get the Beare code from Idealista using the API.
+     *
      * @return array
-     * 
+     *
      * @throws Exception
      */
     public function getBearerCodeFromServer(): array
@@ -113,34 +109,33 @@ class Idealista {
         $credentials = $this->getCredentials();
         $headers = $this->getHeaders($credentials);
 
-        $url = self::BASE_URI . self::OAUTH_PATH;
-      
+        $url = self::BASE_URI.self::OAUTH_PATH;
+
         $requestParams = [
             'timeout' => self::TIMEOUT,
             'form_params' => [
-                "grant_type" => "client_credentials"
+                'grant_type' => 'client_credentials',
             ],
-            'headers' => $headers
+            'headers' => $headers,
         ];
         $response = $this->client->request(
             'POST',
-            $url, 
+            $url,
             $requestParams
         );
-        
-        if (!$response || $response->getStatusCode() != 200) 
-        {
+
+        if (!$response || $response->getStatusCode() != 200) {
             throw new \Exception('Error retrieving bearer code.');
         }
-
 
         return json_decode($response->getBody(), true);
     }
 
     /**
-     * Checks if a security token is valid
+     * Checks if a security token is valid.
      *
      * @param array $bearerCode
+     *
      * @return bool
      */
     public function isBearerCodeValid($bearerCode): bool
@@ -150,10 +145,10 @@ class Idealista {
 
     /**
      * Returns the bearer code.
-     * 
+     *
      * This method checks the bearer code in three distint locations and fallback in the predefined order:
      *  - locally on the Service
-     *  - on memcached 
+     *  - on memcached
      *  - on the idealista oauth endpoint
      *
      * @return array
@@ -167,6 +162,7 @@ class Idealista {
         $memcachedBearerCode = $this->getBearerCodeFromMemcached();
         if ($this->isBearerCodeValid($memcachedBearerCode)) {
             $this->bearerCode = $memcachedBearerCode;
+
             return $memcachedBearerCode;
         }
 
@@ -178,22 +174,22 @@ class Idealista {
     }
 
     /**
-     * Get the value of secret
+     * Get the value of secret.
      *
-     * @return  string
-     */ 
+     * @return string
+     */
     public function getSecret()
     {
         return $this->secret;
     }
 
     /**
-     * Set the value of secret
+     * Set the value of secret.
      *
-     * @param  string  $secret
+     * @param string $secret
      *
-     * @return  self
-     */ 
+     * @return self
+     */
     public function setSecret(string $secret)
     {
         $this->secret = $secret;
@@ -202,71 +198,64 @@ class Idealista {
     }
 
     /**
-     * Get the value of key
+     * Get the value of key.
      *
-     * @return  string
-     */ 
+     * @return string
+     */
     public function getKey()
     {
         return $this->key;
     }
 
     /**
-     * Set the value of key
+     * Set the value of key.
      *
-     * @param  string  $key
+     * @param string $key
      *
-     * @return  self
-     */ 
+     * @return self
+     */
     public function setKey(string $key)
     {
         $this->key = $key;
-   
+
         return $this;
     }
 
     /**
-     * Searches in the Idealista API using the search parameters provided 
+     * Searches in the Idealista API using the search parameters provided.
      *
      * @param array $searchParameters
-     * 
-     * @return void
      */
     public function search($searchParameters)
     {
         /** @var string $bearerCode */
-        $bearerCode = $this->getBearerCode();
-
         /** @var array $headers */
-        $headers = $this->getHeaders($bearerCode["access_token"], true);
-
         /** @var string */
+        /** @var string */
+        $bearerCode = $this->getBearerCode();
+        $headers = $this->getHeaders($bearerCode['access_token'], true);
         $searchParametersString = $this->getSearchParametersString($searchParameters);
-
-        /** @var string */
         $cachedSearchResult = $this->memcached->get($searchParametersString);
 
-        if (!!$cachedSearchResult)
-        {
+        if ((bool) $cachedSearchResult) {
             return $cachedSearchResult;
         }
 
-        $url = self::BASE_URI . self::SEARCH_PATH;
+        $url = self::BASE_URI.self::SEARCH_PATH;
 
         /** @var $requestParams */
         $requestParams = [
             'timeout' => self::TIMEOUT,
             'form_params' => $searchParameters,
-            'headers' => $headers
+            'headers' => $headers,
         ];
         $response = $this->client->request(
             'POST',
-            $url, 
+            $url,
             $requestParams
         );
 
-        if (!$response || $response->getStatusCode() != 200) 
-        {
+        if (!$response || $response->getStatusCode() != 200) {
             throw new \Exception('Error retrieving bearer code.');
         }
 
@@ -274,21 +263,23 @@ class Idealista {
     }
 
     /**
-     * Produces a key-string from an array to be used on the body of a search request
+     * Produces a key-string from an array to be used on the body of a search request.
      *
      * @param array $searchParameters
+     *
      * @return string
      */
-    static public function getSearchParametersString($searchParameters): string
+    public static function getSearchParametersString($searchParameters): string
     {
         return join('&', array_map(
-            function($value, string $key) {
+            function ($value, string $key) {
                 if (gettype($value) == 'boolean') {
                     $value = $value ? 'true' : 'false';
                 }
-                return $key . '=' . $value;
-            }, 
-            $searchParameters, 
+
+                return $key.'='.$value;
+            },
+            $searchParameters,
             array_keys($searchParameters)
         ));
     }

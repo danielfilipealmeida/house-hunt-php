@@ -2,7 +2,7 @@
 
 namespace App\Command;
 
-use App\Service\Idealista;
+use App\Entity\Search;
 use App\Entity\SearchResult;
 use Doctrine\ORM\EntityManager;
 use App\Repository\SearchRepository;
@@ -10,10 +10,11 @@ use App\Repository\SearchResultRepository;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Input\InputArgument;
+use App\Service\Idealista;
 
 class FetchFromIdealistaCommand extends Command
 {
-
     /** @var Idealista */
     private $idealista;
 
@@ -27,12 +28,12 @@ class FetchFromIdealistaCommand extends Command
     //private $searchResultRepository;
 
     /**
-     * @param Idealista $idealista
-     * @param EntityManager $entityManager
+     * @param Idealista        $idealista
+     * @param EntityManager    $entityManager
      * @param SearchRepository $searchRepository
      */
     public function __construct(
-        Idealista $idealista, 
+        Idealista $idealista,
         EntityManager $entityManager,
         SearchRepository $searchRepository
     ) {
@@ -43,47 +44,51 @@ class FetchFromIdealistaCommand extends Command
         parent::__construct();
     }
 
+    /**
+     * Configure the command.
+     */
     protected function configure()
     {
         $this->setName('idealista:fetch')
-            ->setDescription('Fetches stored searches from the Idealista API.');
-
+            ->setDescription('Fetches stored searches from the Idealista API.')
+            ->addArgument('id', InputArgument::REQUIRED, 'The id of the record in the search table.');
     }
 
     /**
-     * Fetches a search from the Idealista API
+     * Queries the Search table and returns the search configuration in array form.
      *
-     * @param InputInterface $input
+     * @param int $id
+     *
+     * @return array
+     */
+    protected function getSearchConfigurationArrayFromSearchId($id)
+    {
+        /** @var Search $search */
+        /** @var array $searchConfigurationArray */
+        $search = $this->searchRepository->findOneBy(['id' => $id]);
+        $searchConfigurationArray = \json_decode($search->getConfiguration(), true);
+
+        return $searchConfigurationArray;
+    }
+
+    /**
+     * Fetches a search from the Idealista API.
+     *
+     * @param InputInterface  $input
      * @param OutputInterface $output
-     * @return void
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        // need a search ID.
-        // needs to get the search array
-        // needs to use the service
-        // needs to store the search
+        /** @var array $searchConfigurationArray */
+        $searchConfigurationArray = $this->getSearchConfigurationArrayFromSearchId($input->getArgument('id'));
 
-        $testParameterArray = [
-            'country' => 'pt',
-            'operation' => 'sale',
-            'propertyType' => 'homes',
-            'center' => '37.0160273,-7.93204812',
-            'distance' => 5000,
-            'chalet' => true,
-            'maxPrice' => 150000,
-            'order' => 'price',
-            'sort' => 'asc'
-        ];
-
-
-        $result = $this->idealista->search($testParameterArray);
+        $result = $this->idealista->search($searchConfigurationArray);
 
         $searchResult = new SearchResult();
         $searchResult->setDate(new \DateTimeImmutable())
-            ->setSearch(Idealista::getSearchParametersString($testParameterArray))
+            ->setSearch(Idealista::getSearchParametersString($searchConfigurationArray))
             ->setJson($result);
-        
+
         $this->entityManager->persist($searchResult);
         $this->entityManager->flush();
     }

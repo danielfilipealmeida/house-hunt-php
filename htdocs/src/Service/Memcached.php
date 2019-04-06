@@ -39,7 +39,7 @@ class Memcached {
             'host' => $host,
             'port' => $port
         ];
-
+       
         $this->memcached->addServer($host, $port);
     } 
 

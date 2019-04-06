@@ -1,0 +1,21 @@
+{% macro logBlock() %}
+    <div class="navbar-end">
+        <div class="navbar-item">
+
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <div class="navbar-item">
+                Hi,
+                {{ app.user.email }}
+                </div>
+                <div class="buttons">
+                    <a href="{{ path("logout") }}" class="button">Logout</a>
+                </div>
+                
+            {% else %}
+                <div class="buttons">
+                    <a href="{{ path("login") }}" class="button is-link"">Login</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>{% endmacro %}

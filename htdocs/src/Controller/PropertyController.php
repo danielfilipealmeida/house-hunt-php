@@ -19,26 +19,20 @@ class PropertyController extends AbstractController
      * @Route("/property", name="property")
      */
     public function index(
-        Breadcrumb $breadcrumb, 
+        Breadcrumb $breadcrumb,
         LoggerInterface $logger,
         Memcached $memcached
     ) {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+
         $properties = $this->getDoctrine()->getRepository(Property::class)->findAll();
         $breadcrumb->setPageTitle('All Properties');
-
-        //$memcached = new \Memcached();
-        //$memcached->addServer('localhost', 11211);
-        //$memcached->set('foo', 10);
-
-
-        //$logger->info($memcached->get('foo'));
-        //var_dump($memcached->get('foo'));
 
         return $this->render('property/index.html.twig', [
             'controller_name' => 'PropertyController',
             'pageTitle' => 'All Properties',
             'properties' => $properties,
-            'breadcrumb' => $breadcrumb->get()
+            'breadcrumb' => $breadcrumb->get(),
         ]);
     }
 
@@ -47,8 +41,10 @@ class PropertyController extends AbstractController
      */
     public function show(Property $property, Breadcrumb $breadcrumb)
     {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+
         if (!$property) {
-            throw $this->createNotFoundException('No property found for id ' . $id);
+            throw $this->createNotFoundException('No property found for id '.$id);
         }
 
         $breadcrumb->setPageTitle($property->getTitle());
@@ -58,33 +54,32 @@ class PropertyController extends AbstractController
             'property/show.html.twig',
             [
                 'property' => $property,
-                'breadcrumb' => $breadcrumb->get()
+                'breadcrumb' => $breadcrumb->get(),
             ]
         );
     }
 
     /**
      * @Route("/property_edit/{id}", name="property_edit", requirements={"id"="\d+"})
-     *
-     * @return void
      */
     public function edit(
-        Property $property, 
-        Request $request, 
+        Property $property,
+        Request $request,
         Breadcrumb $breadcrumb
     ) {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+
         if (!$property) {
-            throw $this->createNotFoundException('No property found for id ' . $id);
+            throw $this->createNotFoundException('No property found for id '.$id);
         }
 
         $form = $this->createFormForProperty($property);
-        
 
         $breadcrumb->setPageTitle($property->getTitle());
         $breadcrumb->add('All Properties', $this->generateUrl('property'));
 
         $form->handleRequest($request);
-        
+
         if ($form->isSubmitted() && $form->isValid()) {
             $property = $form->getData();
 
@@ -96,7 +91,7 @@ class PropertyController extends AbstractController
                 'property_show',
                 [
                     'id' => $property->getId(),
-                    'breadcrumb' => $breadcrumb->get()
+                    'breadcrumb' => $breadcrumb->get(),
                 ]
             );
         }
@@ -105,22 +100,22 @@ class PropertyController extends AbstractController
             'property/form.html.twig',
             [
                 'form' => $form->createView(),
-                'breadcrumb' => $breadcrumb->get()
+                'breadcrumb' => $breadcrumb->get(),
             ]
         );
     }
 
     /**
      * @Route("/property/new", name="property_new")
-     *
-     * @return void
      */
     public function new(
         Breadcrumb $breadcrumb,
         Request $request
     ) {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+
         $property = new Property();
-        
+
         $form = $this->createFormForProperty($property);
 
         $form->handleRequest($request);
@@ -137,27 +132,26 @@ class PropertyController extends AbstractController
             return $this->redirectToRoute(
                 'property_show',
                 [
-                    'id' => $property->getId()
+                    'id' => $property->getId(),
                 ]
             );
         }
 
-        $breadcrumb->setPageTitle("New Property");
-        
+        $breadcrumb->setPageTitle('New Property');
+
         return $this->render(
             'property/form.html.twig',
             [
                 'form' => $form->createView(),
-                'breadcrumb' => $breadcrumb->get()
+                'breadcrumb' => $breadcrumb->get(),
             ]
         );
     }
 
     /**
-     * Creates a form for the given Property
+     * Creates a form for the given Property.
      *
      * @param Property $property
-     * @return void
      */
     public function createFormForProperty(Property $property): Form
     {
@@ -167,4 +161,3 @@ class PropertyController extends AbstractController
         ->getForm();
     }
 }
-

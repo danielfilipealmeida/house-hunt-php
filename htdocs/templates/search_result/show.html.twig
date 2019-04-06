@@ -1,0 +1,112 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1 class="title">Search Result: {{ searchResult.searchTerm | slice(0, 40)}} / {{ searchResult.date|date("Y-m-d") }} (ID: {{ searchResult.id }})</h1>
+   
+
+        <table class="table is-fullwidth is-hoverable is-striped">
+            <tbody>
+                <tr>
+                    <th>Id</th>
+                    <td>{{ searchResult.id }}</td>
+                </tr>
+
+                <tr>
+                    <th>Search</th>
+                    <td>{{ searchResult.searchTerm }}</td>
+                </tr>
+
+                <tr>
+                    <th>Date</th>
+                    <td>{{ searchResult.date|date("Y-m-d") }}</td>
+                </tr>
+
+                <tr>
+                    <th>Summary</th>
+                    <td>
+                        {% for item in searchResult.json.summary %}
+                            <p>{{ item }}</p>
+                        {% endfor %}
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Results</th>
+                    <td>
+                        <div class="container">
+                        
+                        {% for item in searchResult.json.elementList %}
+                            {% block resultItem %}{% endblock %}
+                                <div class="columns">
+                                    <div class="column is-one-third">
+                                        {% if item.thumbnail is defined %}
+                                        <img src="{{ item.thumbnail }}" \>
+                                        {% endif %}
+                                    </div>
+                                    <div class="column">
+                                        <p class="title is-5">{{ item.suggestedTexts.title }} - {{ item.suggestedTexts.subtitle }} - {{ item.price }} €</p>
+                                        <p class="subtitle is-5"><a href="{{ item.url }}" target="_blank">{{ item.url }}</a></p>
+                                        <table  class="table is-fullwidth is-striped">
+                                        <tr>
+                                        <td>
+                                            <dl>
+                                                <dt>Code:</dt>
+                                                <dd>{{ item.propertyCode }}</dd>
+                
+                                                <dt>Rooms:</dt>
+                                                <dd>{{ item.rooms }}</dd>
+                                                
+                                                <dt>Property Type:</dt>
+                                                <dd>{{ item.propertyType }}</dd>
+
+                                                <dt>Rooms:</dt>
+                                                <dd>{{ item.rooms }}</dd>
+                                                
+                                                <dt>Bathrooms:</dt>
+                                                <dd>{{ item.bathrooms }}</dd>
+                                            </dl>
+                                        </td>
+                                        <td>
+                                            <dl>
+                                                <dt>Address:</dt>
+                                                <dd>{{ item.address }}</dd>
+
+                                                <dt>Province:</dt>
+                                                <dd>{{ item.province }}</dd>
+
+                                                <dt>Municipality:</dt>
+                                                <dd>{{ item.municipality }}</dd>
+
+                                                <dt>Country:</dt>
+                                                <dd>{{ item.country }}</dd>
+                                            </dl>
+                                        </td>
+                                        <td>
+                                            <dl>
+                                                <dt>Latitude:</dt>
+                                                <dd>{{ item.latitude }}</dd>
+
+                                                <dt>Longitude:</dt>
+                                                <dd>{{ item.longitude }}</dd>
+
+
+                                            </dl>
+                                        </td>
+                                        </table>
+                                        
+
+                                            
+                                            
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div> 
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+{% endblock %}
+

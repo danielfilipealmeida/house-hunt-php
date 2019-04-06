@@ -1,4 +1,6 @@
 {% from 'breadcrumb.html.twig' import breadcrumb %}
+{% from 'logblock.html.twig' import logblock %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}House Hunt{% endblock %}</title>
         <link rel="stylesheet" href="/css/bulma.min.css">
+        <link rel="stylesheet" href="/css/style.css">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
@@ -18,19 +21,25 @@
                 </div>
                 <div class="navbar-menu">
                     <div class="navbar-start">
-                        <a class="navbar-item" href=" {{ path("search") }}">
+                        <a class="navbar-item" href="{{ path("search") }}">
                         Searches
                         </a>
-                        <a class="navbar-item" href=" {{ path("property") }}">
+                        <a class="navbar-item" href="{{ path("search_result") }}">
+                        Search Results
+                        </a>
+                        <a class="navbar-item" href="{{ path("property") }}">
                         Properties
                         </a>
                     </div>
                 </div>
+                {{ logblock() }}
             <nav>
         </div>
 
-        {{ breadcrumb(breadcrumb) }}
-
+        {% if breadcrumb is defined %}
+            {{ breadcrumb(breadcrumb) }}
+        {% endif %}
+        
         <div class="section">
             <div class="container">
 

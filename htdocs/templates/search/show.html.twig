@@ -21,6 +21,19 @@
                     <th>Title</th>
                     <td>{{ search.title }}</td>
                 </tr>
+
+                <tr>
+                    <th>Configuration</th>
+                    <td>
+                        <dl>
+
+                        {% for key, value in search.configuration|json_decode  %}
+                            <dt>{{ key }}</dt>
+                            <dd>{{ value }}</dd>
+                        {% endfor %}
+                        </dl>
+                        </td>
+                </tr>
             </tbody>
         </table>
 

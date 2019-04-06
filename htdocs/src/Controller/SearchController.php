@@ -11,7 +11,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
-
 class SearchController extends AbstractController
 {
     /**
@@ -20,18 +19,20 @@ class SearchController extends AbstractController
     public function index(
         Breadcrumb $breadcrumb
     ) {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+
         $searches = $this->getDoctrine()
             ->getRepository(Search::class)
             ->findAll();
-        
 
         $breadcrumb->setPageTitle('All Searches');
+
         return $this->render('search/index.html.twig', [
             'controller_name' => 'SearchController',
             'pageTitle' => 'All Searches',
             'searches' => $searches,
-            'breadcrumb' => $breadcrumb->get()
-        ]);   
+            'breadcrumb' => $breadcrumb->get(),
+        ]);
     }
 
     /**
@@ -39,8 +40,10 @@ class SearchController extends AbstractController
      */
     public function show(Search $search, Breadcrumb $breadcrumb)
     {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+
         if (!$search) {
-            throw $this->createNotFoundException('No search found for id ' . $id);
+            throw $this->createNotFoundException('No search found for id '.$id);
         }
 
         $breadcrumb->setPageTitle($search->getTitle());
@@ -50,22 +53,22 @@ class SearchController extends AbstractController
             'search/show.html.twig',
             [
                 'search' => $search,
-                'breadcrumb' => $breadcrumb->get()
+                'breadcrumb' => $breadcrumb->get(),
             ]
         );
     }
 
     /**
      * @Route("/search/new", name="search_new")
-     *
-     * @return void
      */
     public function new(
         Breadcrumb $breadcrumb,
         Request $request
     ) {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+
         $search = new Search();
-        
+
         $form = $this->createFormForSearch($search);
 
         $form->handleRequest($request);
@@ -82,27 +85,26 @@ class SearchController extends AbstractController
             return $this->redirectToRoute(
                 'search_show',
                 [
-                    'id' => $search->getId()
+                    'id' => $search->getId(),
                 ]
             );
         }
 
-        $breadcrumb->setPageTitle("New Search");
-        
+        $breadcrumb->setPageTitle('New Search');
+
         return $this->render(
             'search/form.html.twig',
             [
                 'form' => $form->createView(),
-                'breadcrumb' => $breadcrumb->get()
+                'breadcrumb' => $breadcrumb->get(),
             ]
         );
     }
 
     /**
-     * Creates a form for the given Search
+     * Creates a form for the given Search.
      *
      * @param Search $search
-     * @return void
      */
     public function createFormForSearch(Search $search): Form
     {
@@ -111,5 +113,4 @@ class SearchController extends AbstractController
         ->add('save', SubmitType::class, ['label' => 'Save Search', 'attr' => ['class' => 'button']])
         ->getForm();
     }
-
 }
