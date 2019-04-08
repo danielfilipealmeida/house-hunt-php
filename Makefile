@@ -3,6 +3,7 @@ export MEMCACHED_PORT=11211
 export XDEBUG_CONFIG="idekey=VSCODE"
 
 #constants
+CONT_REVERSEPROXY=reverseproxy
 CONT_WEB=web
 CONT_DB=db
 DATABASE=house_hunt
@@ -130,6 +131,10 @@ apache-reload: ##@servers Reload the apache server
 	make run COM="service apache2 reload"
 .PHONY: apache-reload
 
+rpcli: ##@servers Open a bash shell in the reverse proxy container
+	docker-compose exec $(CONT_REVERSEPROXY) bash
+.PHONY: rpcli
+
 dbshell: ##@database Open a database shell
 	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) --database=$(DATABASE)
 .PHONY: dbshell
@@ -158,3 +163,8 @@ createdatabase: ##@database Creates the database
 fetchdata: ##@commands Use commands to fetch all data from APIs
 	make console COM="idealista:fetch"
 .PHONY: fetchdata
+
+
+cache-clear: ##@dev Clear the cache
+	make console COM="cache:clear"
+.PHONY: cache-clear

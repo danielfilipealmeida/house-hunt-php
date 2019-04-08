@@ -19,7 +19,10 @@ class SearchResultController extends AbstractController
 
         $searchResults = $this->getDoctrine()
             ->getRepository(SearchResult::class)
-            ->findAll();
+            ->findBy(
+                array(),
+                array('id' => 'DESC')
+            );
         $breadcrumb->setPageTitle('All Search Results');
 
         return $this->render('search_result/index.html.twig', [

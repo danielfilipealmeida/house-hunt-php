@@ -1,3 +1,5 @@
 parameters:
     app.idealista.key: ''
     app.idealista.secret: ''
+    app.memcached.host: '127.0.0.1'
+    app.memcached.port: 11211

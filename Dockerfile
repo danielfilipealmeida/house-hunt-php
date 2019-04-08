@@ -7,9 +7,17 @@ RUN echo "Setting up Web Container" \
         libmemcached-tools \
         nano \
         net-tools \
-    && docker-php-ext-install -j$(nproc) zip \
-    && pecl install memcached-3.0.4 \
-    && pecl install xdebug \
-    && docker-php-ext-enable memcached \
-    && docker-php-ext-enable xdebug \
-    && docker-php-ext-install pdo pdo_mysql 
+        iputils-ping \
+        netcat \
+        jnettop \
+        telnet
+
+RUN pecl install memcached-3.0.4 \
+    && pecl install xdebug 
+
+
+RUN docker-php-ext-install -j$(nproc) zip \
+    && docker-php-ext-install pdo pdo_mysql
+
+RUN docker-php-ext-enable memcached \
+    && docker-php-ext-enable xdebug 

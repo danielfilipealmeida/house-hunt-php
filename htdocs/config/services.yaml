@@ -40,6 +40,13 @@ services:
     #doctrine.orm.entity_manager:
     #    class: Doctrine\ORM\EntityManager
 
+    App\Service\Memcached:
+        calls:
+            - method: addServer
+              arguments:
+                    - '%app.memcached.host%'
+                    - '%app.memcached.port%'
+
     App\Service\Idealista:
         arguments:
             - '@App\Service\Memcached'
@@ -57,3 +64,8 @@ services:
             - '@App\Service\Idealista'
             - '@doctrine.orm.entity_manager'
             - '@App\Repository\SearchRepository'
+
+    App\Command\AddUserCommand:
+        arguments:
+            - '@App\Repository\UserRepository'
+            - '@doctrine.orm.entity_manager'
