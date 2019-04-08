@@ -4,7 +4,7 @@ services:
         build: ./docker/reverseproxy
         restart: always
         ports:
-            - "18080:18080"
+            - "80:80"
             - "18081:18081"
 
     web:
@@ -17,12 +17,13 @@ services:
             - ./htdocs:/var/www/html
             - ./docker/web/000-default.conf:/etc/apache2/sites-available/000-default.conf
             - ./docker/web/php.ini:/usr/local/etc/php/php.ini
+            - ./docker/web/apache2.conf:/etc/apache2/apache2.conf
         environment:
             - XDEBUG_CONFIG=idekey=VSCODE
             - VIRTUAL_HOST=househunt
         depends_on:
             - reverseproxy
-            
+
     db:
         image:  mariadb
         restart: always
@@ -39,8 +40,8 @@ services:
     adminer:
         image: adminer
         restart: always
-        # ports:
-        #     - "8081:8080"
+        ports:
+            - "8081:8080"
         depends_on:
             - reverseproxy
         environment:

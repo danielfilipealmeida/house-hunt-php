@@ -21,3 +21,5 @@ RUN docker-php-ext-install -j$(nproc) zip \
 
 RUN docker-php-ext-enable memcached \
     && docker-php-ext-enable xdebug 
+
+RUN ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/rewrite.load

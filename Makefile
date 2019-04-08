@@ -70,6 +70,10 @@ help: ##@other Show this help.
 	@perl -e '$(HELP_FUN)' $(MAKEFILE_LIST)
 .PHONY: help
 
+open: ##@other Opens all containers in browser tabs.
+	open http://househunt/
+	open http://adminer/
+.PHONY: help
 
 setup-doctrine: ##@doctrine Drops and re-creates the database with data
 	make dropdatabase
@@ -90,6 +94,7 @@ setup: ##@servers Sets up all containers
 	make build
 	docker-compose up -d
 	make start
+	make open
 	#make setup-doctrine
 .PHONY: setup
 
