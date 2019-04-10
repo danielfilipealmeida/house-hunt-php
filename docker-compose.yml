@@ -2,31 +2,32 @@ version: '3'
 services:
     reverseproxy:
         build: ./docker/reverseproxy
-        restart: always
         ports:
             - "80:80"
             - "18081:18081"
-
+        restart: "no"
+            
     web:
         build: .
         ports:
+            - "9000:9000"
             - "8080:80"
-            - "9001:9000"
             - "11212:11211"
         volumes:
             - ./htdocs:/var/www/html
             - ./docker/web/000-default.conf:/etc/apache2/sites-available/000-default.conf
             - ./docker/web/php.ini:/usr/local/etc/php/php.ini
             - ./docker/web/apache2.conf:/etc/apache2/apache2.conf
-        environment:
-            - XDEBUG_CONFIG=idekey=VSCODE
-            - VIRTUAL_HOST=househunt
+        #environment:
+        #     XDEBUG_CONFIG: "idekey=VSCODE"
+        #     VIRTUAL_HOST: "househunt"
+        #     PHP_IDE_CONFIG: "serverName=Test"
         depends_on:
             - reverseproxy
+        restart: "no"
 
     db:
         image:  mariadb
-        restart: always
         environment:
             MYSQL_ROOT_PASSWORD: passpass
             MYSQL_DATABASE: house-hunt
@@ -36,13 +37,14 @@ services:
         #    - ./docker/mariadb/datadir:/var/lib/mysql
         depends_on:
             - reverseproxy
-            
+        restart: "no"
+           
     adminer:
         image: adminer
-        restart: always
         ports:
             - "8081:8080"
         depends_on:
             - reverseproxy
         environment:
             - VIRTUAL_HOST=adminer
+        restart: "no"

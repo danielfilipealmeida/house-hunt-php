@@ -108,7 +108,7 @@ start: ##@servers Starts all containers
 .PHONY: start
 
 stop: ##@servers Stops all containers
-	docker-compose stop
+	docker-compose down
 .PHONY: stop
 
 reload: ##@servers Reloads all containers

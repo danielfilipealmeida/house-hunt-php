@@ -21,3 +21,4 @@
 /htdocs/config/config.yaml
 
 .vscode/*
+/nbproject/private/
