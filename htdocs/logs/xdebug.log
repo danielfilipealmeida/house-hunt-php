@@ -5575,3 +5575,2159 @@
 [20]
 [20] Log closed at 2019-04-10 15:41:30
 [20]
+[16] Log opened at 2019-04-10 17:26:10
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] I: Connected to client. :-)
+[16] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="16" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[16]
+[16] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[16]
+[16] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[16]
+[16] Log closed at 2019-04-10 17:26:15
+[16]
+[17] Log opened at 2019-04-10 17:26:15
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] I: Connected to client. :-)
+[17] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="17" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[17]
+[18] Log opened at 2019-04-10 17:26:15
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[17]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[19] Log opened at 2019-04-10 17:26:16
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] I: Connected to client. :-)
+[19] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="19" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[19]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-10 17:26:20
+[18]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[17]
+[17] Log closed at 2019-04-10 17:26:21
+[17]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[19]
+[19] Log closed at 2019-04-10 17:26:21
+[19]
+[20] Log opened at 2019-04-10 17:26:37
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] I: Connected to client. :-)
+[20] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="20" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[20]
+[20] Log closed at 2019-04-10 17:26:41
+[20]
+[21] Log opened at 2019-04-10 17:26:41
+[21] I: Connecting to configured address/port: host.docker.internal:9000.
+[21] I: Connected to client. :-)
+[21] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="21" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[21]
+[21] Log closed at 2019-04-10 17:26:44
+[21]
+[16] Log opened at 2019-04-10 17:39:21
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] I: Connected to client. :-)
+[16] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="16" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[16]
+[16] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[16]
+[16] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[16]
+[16] Log closed at 2019-04-10 17:39:24
+[16]
+[22] Log opened at 2019-04-10 17:39:24
+[22] I: Connecting to configured address/port: host.docker.internal:9000.
+[22] I: Connected to client. :-)
+[22] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="22" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[22]
+[22] Log closed at 2019-04-10 17:39:27
+[22]
+[23] Log opened at 2019-04-10 17:41:33
+[23] I: Connecting to configured address/port: host.docker.internal:9000.
+[23] I: Connected to client. :-)
+[23] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="23" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[23]
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[23]
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[23]
+[23] Log closed at 2019-04-10 17:41:38
+[23]
+[24] Log opened at 2019-04-10 17:41:38
+[24] I: Connecting to configured address/port: host.docker.internal:9000.
+[24] I: Connected to client. :-)
+[24] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="24" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[24]
+[24] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[24]
+[24] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[24]
+[24] Log closed at 2019-04-10 17:41:42
+[24]
+[18] Log opened at 2019-04-10 17:41:48
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-10 17:41:52
+[18]
+[17] Log opened at 2019-04-10 17:41:52
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] I: Connected to client. :-)
+[17] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="17" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[17]
+[17] Log closed at 2019-04-10 17:41:55
+[17]
+[19] Log opened at 2019-04-10 17:42:03
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] I: Connected to client. :-)
+[19] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="19" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[19]
+[19] Log closed at 2019-04-10 17:42:06
+[19]
+[20] Log opened at 2019-04-10 17:42:06
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] I: Connected to client. :-)
+[20] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="20" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[20]
+[20] Log closed at 2019-04-10 17:42:10
+[20]
+[21] Log opened at 2019-04-10 17:42:58
+[21] I: Connecting to configured address/port: host.docker.internal:9000.
+[21] I: Connected to client. :-)
+[21] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="21" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[21]
+[21] Log closed at 2019-04-10 17:43:02
+[21]
+[24] Log opened at 2019-04-10 17:43:02
+[24] I: Connecting to configured address/port: host.docker.internal:9000.
+[24] I: Connected to client. :-)
+[24] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="24" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[24]
+[24] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[24]
+[24] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[24]
+[24] Log closed at 2019-04-10 17:43:05
+[24]
+[18] Log opened at 2019-04-10 17:43:19
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-10 17:43:21
+[18]
+[21] Log opened at 2019-04-10 17:43:21
+[21] I: Connecting to configured address/port: host.docker.internal:9000.
+[21] I: Connected to client. :-)
+[21] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="21" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[21]
+[21] Log closed at 2019-04-10 17:43:24
+[21]
+[22] Log opened at 2019-04-10 17:45:57
+[22] I: Connecting to configured address/port: host.docker.internal:9000.
+[22] I: Connected to client. :-)
+[22] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="22" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[22]
+[22] Log closed at 2019-04-10 17:46:01
+[22]
+[18] Log opened at 2019-04-10 17:46:01
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-10 17:46:04
+[18]
+[20] Log opened at 2019-04-10 17:46:10
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] I: Connected to client. :-)
+[20] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="20" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[20]
+[20] Log closed at 2019-04-10 17:46:12
+[20]
+[22] Log opened at 2019-04-10 17:46:12
+[22] I: Connecting to configured address/port: host.docker.internal:9000.
+[22] I: Connected to client. :-)
+[22] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="22" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[22]
+[22] Log closed at 2019-04-10 17:46:14
+[22]
+[16] Log opened at 2019-04-10 17:49:39
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] I: Connected to client. :-)
+[16] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="16" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[16]
+[16] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[16]
+[16] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[16]
+[16] Log closed at 2019-04-10 17:49:42
+[16]
+[20] Log opened at 2019-04-10 17:49:42
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] I: Connected to client. :-)
+[20] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="20" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[20]
+[20] Log closed at 2019-04-10 17:49:44
+[20]
+[17] Log opened at 2019-04-10 17:52:17
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] I: Connected to client. :-)
+[17] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="17" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[17]
+[17] Log closed at 2019-04-10 17:52:19
+[17]
+[16] Log opened at 2019-04-10 17:52:19
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] I: Connected to client. :-)
+[16] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="16" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[16]
+[16] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[16]
+[16] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[16]
+[16] Log closed at 2019-04-10 17:52:23
+[16]
+[16] Log opened at 2019-04-10 17:54:17
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] I: Connected to client. :-)
+[16] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="16" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[16]
+[16] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[16]
+[16] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[16]
+[16] Log closed at 2019-04-10 17:54:20
+[16]
+[17] Log opened at 2019-04-10 17:54:20
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] I: Connected to client. :-)
+[17] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="17" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[17]
+[17] Log closed at 2019-04-10 17:54:22
+[17]
+[18] Log opened at 2019-04-10 17:54:39
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-10 17:54:42
+[18]
+[19] Log opened at 2019-04-10 17:54:42
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] I: Connected to client. :-)
+[19] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="19" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[19]
+[19] Log closed at 2019-04-10 17:54:44
+[19]
+[20] Log opened at 2019-04-10 17:59:28
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] I: Connected to client. :-)
+[20] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="20" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[20]
+[20] Log closed at 2019-04-10 17:59:30
+[20]
+[21] Log opened at 2019-04-10 17:59:30
+[21] I: Connecting to configured address/port: host.docker.internal:9000.
+[21] I: Connected to client. :-)
+[21] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="21" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[21]
+[21] Log closed at 2019-04-10 17:59:32
+[21]
+[16] Log opened at 2019-04-10 17:59:39
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] I: Connected to client. :-)
+[16] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="16" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[16]
+[16] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[16]
+[16] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[16]
+[16] Log closed at 2019-04-10 17:59:41
+[16]
+[17] Log opened at 2019-04-10 17:59:41
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] I: Connected to client. :-)
+[17] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="17" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[17]
+[17] Log closed at 2019-04-10 17:59:43
+[17]
+[18] Log opened at 2019-04-10 17:59:59
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-10 18:00:02
+[18]
+[19] Log opened at 2019-04-10 18:00:02
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] I: Connected to client. :-)
+[19] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="19" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[19]
+[19] Log closed at 2019-04-10 18:00:04
+[19]
+[20] Log opened at 2019-04-10 18:00:14
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] I: Connected to client. :-)
+[20] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="20" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[20]
+[20] Log closed at 2019-04-10 18:00:16
+[20]
+[21] Log opened at 2019-04-10 18:00:16
+[21] I: Connecting to configured address/port: host.docker.internal:9000.
+[21] I: Connected to client. :-)
+[21] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="21" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[21]
+[21] Log closed at 2019-04-10 18:00:18
+[21]
+[16] Log opened at 2019-04-10 18:11:04
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2019-04-10 18:11:04
+[16]
+[16] Log opened at 2019-04-10 18:11:08
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2019-04-10 18:11:08
+[16]
+[16] Log opened at 2019-04-10 18:11:08
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2019-04-10 18:11:08
+[16]
+[16] Log opened at 2019-04-10 18:11:08
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2019-04-10 18:11:08
+[16]
+[16] Log opened at 2019-04-10 18:11:08
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2019-04-10 18:11:08
+[16]
+[16] Log opened at 2019-04-10 18:11:08
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2019-04-10 18:11:08
+[16]
+[16] Log opened at 2019-04-10 18:11:08
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2019-04-10 18:11:08
+[16]
+[16] Log opened at 2019-04-10 18:11:08
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2019-04-10 18:11:08
+[16]
+[16] Log opened at 2019-04-10 18:11:08
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2019-04-10 18:11:08
+[16]
+[16] Log opened at 2019-04-10 18:11:08
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2019-04-10 18:11:08
+[16]
+[16] Log opened at 2019-04-10 18:11:08
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2019-04-10 18:11:08
+[16]
+[16] Log opened at 2019-04-10 18:11:08
+[16] I: Connecting to configured address/port: host.docker.internal:9000.
+[16] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2019-04-10 18:11:08
+[16]
+[17] Log opened at 2019-04-10 18:11:08
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:11:08
+[17]
+[17] Log opened at 2019-04-10 18:11:10
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:11:10
+[17]
+[17] Log opened at 2019-04-10 18:11:10
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:11:10
+[17]
+[17] Log opened at 2019-04-10 18:11:10
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:11:10
+[17]
+[17] Log opened at 2019-04-10 18:11:10
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:11:10
+[17]
+[17] Log opened at 2019-04-10 18:11:10
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:11:10
+[17]
+[17] Log opened at 2019-04-10 18:11:10
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:11:10
+[17]
+[17] Log opened at 2019-04-10 18:11:10
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:11:10
+[17]
+[17] Log opened at 2019-04-10 18:11:10
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:11:10
+[17]
+[17] Log opened at 2019-04-10 18:11:10
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:11:10
+[17]
+[17] Log opened at 2019-04-10 18:11:10
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:11:10
+[17]
+[17] Log opened at 2019-04-10 18:11:10
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:11:10
+[17]
+[18] Log opened at 2019-04-10 18:11:21
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:11:21
+[18]
+[18] Log opened at 2019-04-10 18:11:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:11:23
+[18]
+[18] Log opened at 2019-04-10 18:11:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:11:23
+[18]
+[18] Log opened at 2019-04-10 18:11:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:11:23
+[18]
+[18] Log opened at 2019-04-10 18:11:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:11:23
+[18]
+[18] Log opened at 2019-04-10 18:11:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:11:23
+[18]
+[18] Log opened at 2019-04-10 18:11:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:11:23
+[18]
+[18] Log opened at 2019-04-10 18:11:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:11:23
+[18]
+[18] Log opened at 2019-04-10 18:11:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:11:23
+[18]
+[18] Log opened at 2019-04-10 18:11:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:11:23
+[18]
+[18] Log opened at 2019-04-10 18:11:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:11:23
+[18]
+[18] Log opened at 2019-04-10 18:11:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:11:23
+[18]
+[19] Log opened at 2019-04-10 18:11:23
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2019-04-10 18:11:23
+[19]
+[19] Log opened at 2019-04-10 18:11:25
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2019-04-10 18:11:25
+[19]
+[19] Log opened at 2019-04-10 18:11:25
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2019-04-10 18:11:25
+[19]
+[19] Log opened at 2019-04-10 18:11:25
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2019-04-10 18:11:25
+[19]
+[19] Log opened at 2019-04-10 18:11:25
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2019-04-10 18:11:25
+[19]
+[19] Log opened at 2019-04-10 18:11:25
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2019-04-10 18:11:25
+[19]
+[19] Log opened at 2019-04-10 18:11:25
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2019-04-10 18:11:25
+[19]
+[19] Log opened at 2019-04-10 18:11:25
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2019-04-10 18:11:25
+[19]
+[19] Log opened at 2019-04-10 18:11:25
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2019-04-10 18:11:25
+[19]
+[19] Log opened at 2019-04-10 18:11:25
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2019-04-10 18:11:25
+[19]
+[19] Log opened at 2019-04-10 18:11:25
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2019-04-10 18:11:25
+[19]
+[19] Log opened at 2019-04-10 18:11:25
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2019-04-10 18:11:25
+[19]
+[17] Log opened at 2019-04-10 18:14:20
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] I: Connected to client. :-)
+[17] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="17" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[17]
+[17] Log closed at 2019-04-10 18:14:23
+[17]
+[18] Log opened at 2019-04-10 18:14:24
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-10 18:14:27
+[18]
+[19] Log opened at 2019-04-10 18:14:37
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] I: Connected to client. :-)
+[19] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="19" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[19]
+[19] Log closed at 2019-04-10 18:14:40
+[19]
+[20] Log opened at 2019-04-10 18:14:40
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] I: Connected to client. :-)
+[20] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="20" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[20]
+[20] Log closed at 2019-04-10 18:14:42
+[20]
+[21] Log opened at 2019-04-10 18:15:04
+[21] I: Connecting to configured address/port: host.docker.internal:9000.
+[21] I: Connected to client. :-)
+[21] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="21" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[21]
+[21] Log closed at 2019-04-10 18:15:07
+[21]
+[22] Log opened at 2019-04-10 18:15:07
+[22] I: Connecting to configured address/port: host.docker.internal:9000.
+[22] I: Connected to client. :-)
+[22] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="22" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[22]
+[22] Log closed at 2019-04-10 18:15:10
+[22]
+[17] Log opened at 2019-04-10 18:15:46
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] I: Connected to client. :-)
+[17] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="17" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[17]
+[17] Log closed at 2019-04-10 18:15:49
+[17]
+[18] Log opened at 2019-04-10 18:15:49
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-10 18:15:51
+[18]
+[19] Log opened at 2019-04-10 18:16:07
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] I: Connected to client. :-)
+[19] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/info.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="19" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[19]
+[19] Log closed at 2019-04-10 18:16:07
+[19]
+[20] Log opened at 2019-04-10 18:19:53
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] I: Connected to client. :-)
+[20] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="20" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[20]
+[20] Log closed at 2019-04-10 18:19:56
+[20]
+[18] Log opened at 2019-04-10 18:19:56
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-10 18:19:58
+[18]
+[19] Log opened at 2019-04-10 18:20:10
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] I: Connected to client. :-)
+[19] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="19" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[19]
+[19] Log closed at 2019-04-10 18:20:13
+[19]
+[22] Log opened at 2019-04-10 18:20:13
+[22] I: Connecting to configured address/port: host.docker.internal:9000.
+[22] I: Connected to client. :-)
+[22] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="22" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[22]
+[22] Log closed at 2019-04-10 18:20:15
+[22]
+[18] Log opened at 2019-04-10 18:20:31
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-10 18:20:33
+[18]
+[20] Log opened at 2019-04-10 18:20:33
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] I: Connected to client. :-)
+[20] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="20" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[20]
+[20] Log closed at 2019-04-10 18:20:35
+[20]
+[22] Log opened at 2019-04-10 18:21:09
+[22] I: Connecting to configured address/port: host.docker.internal:9000.
+[22] I: Connected to client. :-)
+[22] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="22" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[22]
+[22] Log closed at 2019-04-10 18:21:12
+[22]
+[19] Log opened at 2019-04-10 18:21:12
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] I: Connected to client. :-)
+[19] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="19" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[19]
+[19] Log closed at 2019-04-10 18:21:14
+[19]
+[20] Log opened at 2019-04-10 18:21:15
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] I: Connected to client. :-)
+[20] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="20" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[20]
+[20] Log closed at 2019-04-10 18:21:17
+[20]
+[18] Log opened at 2019-04-10 18:21:17
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-10 18:21:19
+[18]
+[17] Log opened at 2019-04-10 18:23:17
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:23:17
+[17]
+[17] Log opened at 2019-04-10 18:23:21
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:23:21
+[17]
+[17] Log opened at 2019-04-10 18:23:21
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:23:21
+[17]
+[17] Log opened at 2019-04-10 18:23:21
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:23:21
+[17]
+[17] Log opened at 2019-04-10 18:23:21
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:23:21
+[17]
+[17] Log opened at 2019-04-10 18:23:21
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:23:21
+[17]
+[17] Log opened at 2019-04-10 18:23:21
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:23:21
+[17]
+[17] Log opened at 2019-04-10 18:23:21
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:23:21
+[17]
+[17] Log opened at 2019-04-10 18:23:21
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:23:21
+[17]
+[17] Log opened at 2019-04-10 18:23:21
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:23:21
+[17]
+[17] Log opened at 2019-04-10 18:23:21
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:23:21
+[17]
+[17] Log opened at 2019-04-10 18:23:21
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2019-04-10 18:23:21
+[17]
+[18] Log opened at 2019-04-10 18:23:21
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:23:21
+[18]
+[18] Log opened at 2019-04-10 18:23:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:23:23
+[18]
+[18] Log opened at 2019-04-10 18:23:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:23:23
+[18]
+[18] Log opened at 2019-04-10 18:23:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:23:23
+[18]
+[18] Log opened at 2019-04-10 18:23:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:23:23
+[18]
+[18] Log opened at 2019-04-10 18:23:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:23:23
+[18]
+[18] Log opened at 2019-04-10 18:23:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:23:23
+[18]
+[18] Log opened at 2019-04-10 18:23:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:23:23
+[18]
+[18] Log opened at 2019-04-10 18:23:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:23:23
+[18]
+[18] Log opened at 2019-04-10 18:23:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:23:23
+[18]
+[18] Log opened at 2019-04-10 18:23:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:23:23
+[18]
+[18] Log opened at 2019-04-10 18:23:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-10 18:23:23
+[18]
+[17] Log opened at 2019-04-10 19:17:25
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:17:25
+[17]
+[17] Log opened at 2019-04-10 19:17:29
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:17:29
+[17]
+[17] Log opened at 2019-04-10 19:17:29
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:17:29
+[17]
+[17] Log opened at 2019-04-10 19:17:29
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:17:30
+[17]
+[17] Log opened at 2019-04-10 19:17:30
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:17:30
+[17]
+[17] Log opened at 2019-04-10 19:17:30
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:17:30
+[17]
+[17] Log opened at 2019-04-10 19:17:30
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:17:30
+[17]
+[17] Log opened at 2019-04-10 19:17:30
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:17:30
+[17]
+[17] Log opened at 2019-04-10 19:17:30
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:17:31
+[17]
+[17] Log opened at 2019-04-10 19:17:31
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:17:31
+[17]
+[17] Log opened at 2019-04-10 19:17:31
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:17:31
+[17]
+[17] Log opened at 2019-04-10 19:17:31
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:17:31
+[17]
+[18] Log opened at 2019-04-10 19:17:31
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:17:32
+[18]
+[18] Log opened at 2019-04-10 19:17:34
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:17:35
+[18]
+[18] Log opened at 2019-04-10 19:17:35
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:17:35
+[18]
+[18] Log opened at 2019-04-10 19:17:35
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:17:35
+[18]
+[18] Log opened at 2019-04-10 19:17:35
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:17:35
+[18]
+[18] Log opened at 2019-04-10 19:17:35
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:17:35
+[18]
+[18] Log opened at 2019-04-10 19:17:35
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:17:36
+[18]
+[18] Log opened at 2019-04-10 19:17:36
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:17:36
+[18]
+[18] Log opened at 2019-04-10 19:17:36
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:17:36
+[18]
+[18] Log opened at 2019-04-10 19:17:36
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:17:36
+[18]
+[18] Log opened at 2019-04-10 19:17:36
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:17:37
+[18]
+[18] Log opened at 2019-04-10 19:17:37
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:17:37
+[18]
+[16] Log opened at 2019-04-10 19:21:07
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:21:08
+[16]
+[16] Log opened at 2019-04-10 19:21:11
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:21:12
+[16]
+[16] Log opened at 2019-04-10 19:21:12
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:21:12
+[16]
+[16] Log opened at 2019-04-10 19:21:12
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:21:12
+[16]
+[16] Log opened at 2019-04-10 19:21:12
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:21:12
+[16]
+[16] Log opened at 2019-04-10 19:21:12
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:21:12
+[16]
+[16] Log opened at 2019-04-10 19:21:12
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:21:13
+[16]
+[16] Log opened at 2019-04-10 19:21:13
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:21:13
+[16]
+[16] Log opened at 2019-04-10 19:21:13
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:21:13
+[16]
+[16] Log opened at 2019-04-10 19:21:13
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:21:13
+[16]
+[16] Log opened at 2019-04-10 19:21:13
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:21:14
+[16]
+[16] Log opened at 2019-04-10 19:21:14
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:21:14
+[16]
+[17] Log opened at 2019-04-10 19:21:14
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:21:14
+[17]
+[17] Log opened at 2019-04-10 19:21:17
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:21:17
+[17]
+[17] Log opened at 2019-04-10 19:21:17
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:21:17
+[17]
+[17] Log opened at 2019-04-10 19:21:17
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:21:18
+[17]
+[17] Log opened at 2019-04-10 19:21:18
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:21:18
+[17]
+[17] Log opened at 2019-04-10 19:21:18
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:21:18
+[17]
+[17] Log opened at 2019-04-10 19:21:18
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:21:18
+[17]
+[17] Log opened at 2019-04-10 19:21:18
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:21:18
+[17]
+[17] Log opened at 2019-04-10 19:21:18
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:21:19
+[17]
+[17] Log opened at 2019-04-10 19:21:19
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:21:19
+[17]
+[17] Log opened at 2019-04-10 19:21:19
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:21:19
+[17]
+[17] Log opened at 2019-04-10 19:21:19
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:21:19
+[17]
+[16] Log opened at 2019-04-10 19:22:51
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:22:52
+[16]
+[16] Log opened at 2019-04-10 19:22:56
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:22:56
+[16]
+[16] Log opened at 2019-04-10 19:22:56
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:22:56
+[16]
+[16] Log opened at 2019-04-10 19:22:56
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:22:57
+[16]
+[16] Log opened at 2019-04-10 19:22:57
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:22:57
+[16]
+[16] Log opened at 2019-04-10 19:22:57
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:22:57
+[16]
+[16] Log opened at 2019-04-10 19:22:57
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:22:57
+[16]
+[16] Log opened at 2019-04-10 19:22:57
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:22:57
+[16]
+[16] Log opened at 2019-04-10 19:22:57
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:22:58
+[16]
+[16] Log opened at 2019-04-10 19:22:58
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:22:58
+[16]
+[16] Log opened at 2019-04-10 19:22:58
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:22:58
+[16]
+[16] Log opened at 2019-04-10 19:22:58
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:22:58
+[16]
+[17] Log opened at 2019-04-10 19:22:58
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:22:59
+[17]
+[17] Log opened at 2019-04-10 19:23:01
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:23:02
+[17]
+[17] Log opened at 2019-04-10 19:23:02
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:23:02
+[17]
+[17] Log opened at 2019-04-10 19:23:02
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:23:02
+[17]
+[17] Log opened at 2019-04-10 19:23:02
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:23:02
+[17]
+[17] Log opened at 2019-04-10 19:23:02
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:23:02
+[17]
+[17] Log opened at 2019-04-10 19:23:02
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:23:03
+[17]
+[17] Log opened at 2019-04-10 19:23:03
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:23:03
+[17]
+[17] Log opened at 2019-04-10 19:23:03
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:23:03
+[17]
+[17] Log opened at 2019-04-10 19:23:03
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:23:03
+[17]
+[17] Log opened at 2019-04-10 19:23:03
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:23:04
+[17]
+[17] Log opened at 2019-04-10 19:23:04
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:23:04
+[17]
+[16] Log opened at 2019-04-10 19:27:45
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:27:45
+[16]
+[16] Log opened at 2019-04-10 19:27:49
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:27:49
+[16]
+[16] Log opened at 2019-04-10 19:27:49
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:27:49
+[16]
+[16] Log opened at 2019-04-10 19:27:49
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:27:49
+[16]
+[16] Log opened at 2019-04-10 19:27:49
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:27:50
+[16]
+[16] Log opened at 2019-04-10 19:27:50
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:27:50
+[16]
+[16] Log opened at 2019-04-10 19:27:50
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:27:50
+[16]
+[16] Log opened at 2019-04-10 19:27:50
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:27:50
+[16]
+[16] Log opened at 2019-04-10 19:27:50
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:27:50
+[16]
+[16] Log opened at 2019-04-10 19:27:50
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:27:51
+[16]
+[16] Log opened at 2019-04-10 19:27:51
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:27:51
+[16]
+[16] Log opened at 2019-04-10 19:27:51
+[16] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[16] E: Time-out connecting to client (Waited: 200 ms). :-(
+[16] Log closed at 2019-04-10 19:27:51
+[16]
+[17] Log opened at 2019-04-10 19:27:51
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:27:51
+[17]
+[17] Log opened at 2019-04-10 19:27:54
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:27:54
+[17]
+[17] Log opened at 2019-04-10 19:27:54
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:27:54
+[17]
+[17] Log opened at 2019-04-10 19:27:54
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:27:54
+[17]
+[17] Log opened at 2019-04-10 19:27:54
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:27:54
+[17]
+[17] Log opened at 2019-04-10 19:27:54
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:27:55
+[17]
+[17] Log opened at 2019-04-10 19:27:55
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:27:55
+[17]
+[17] Log opened at 2019-04-10 19:27:55
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:27:55
+[17]
+[17] Log opened at 2019-04-10 19:27:55
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:27:55
+[17]
+[17] Log opened at 2019-04-10 19:27:55
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:27:56
+[17]
+[17] Log opened at 2019-04-10 19:27:56
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:27:56
+[17]
+[17] Log opened at 2019-04-10 19:27:56
+[17] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[17] E: Time-out connecting to client (Waited: 200 ms). :-(
+[17] Log closed at 2019-04-10 19:27:56
+[17]
+[18] Log opened at 2019-04-10 19:28:44
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:28:45
+[18]
+[18] Log opened at 2019-04-10 19:28:48
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:28:48
+[18]
+[18] Log opened at 2019-04-10 19:28:48
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:28:48
+[18]
+[18] Log opened at 2019-04-10 19:28:48
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:28:49
+[18]
+[18] Log opened at 2019-04-10 19:28:49
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:28:49
+[18]
+[18] Log opened at 2019-04-10 19:28:49
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:28:49
+[18]
+[18] Log opened at 2019-04-10 19:28:49
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:28:49
+[18]
+[18] Log opened at 2019-04-10 19:28:49
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:28:49
+[18]
+[18] Log opened at 2019-04-10 19:28:49
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:28:50
+[18]
+[18] Log opened at 2019-04-10 19:28:50
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:28:50
+[18]
+[18] Log opened at 2019-04-10 19:28:50
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:28:50
+[18]
+[18] Log opened at 2019-04-10 19:28:50
+[18] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[18] E: Time-out connecting to client (Waited: 200 ms). :-(
+[18] Log closed at 2019-04-10 19:28:50
+[18]
+[19] Log opened at 2019-04-10 19:28:50
+[19] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[19] E: Time-out connecting to client (Waited: 200 ms). :-(
+[19] Log closed at 2019-04-10 19:28:50
+[19]
+[19] Log opened at 2019-04-10 19:28:53
+[19] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[19] E: Time-out connecting to client (Waited: 200 ms). :-(
+[19] Log closed at 2019-04-10 19:28:53
+[19]
+[19] Log opened at 2019-04-10 19:28:53
+[19] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[19] E: Time-out connecting to client (Waited: 200 ms). :-(
+[19] Log closed at 2019-04-10 19:28:53
+[19]
+[19] Log opened at 2019-04-10 19:28:53
+[19] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[19] E: Time-out connecting to client (Waited: 200 ms). :-(
+[19] Log closed at 2019-04-10 19:28:54
+[19]
+[19] Log opened at 2019-04-10 19:28:54
+[19] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[19] E: Time-out connecting to client (Waited: 200 ms). :-(
+[19] Log closed at 2019-04-10 19:28:54
+[19]
+[19] Log opened at 2019-04-10 19:28:54
+[19] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[19] E: Time-out connecting to client (Waited: 200 ms). :-(
+[19] Log closed at 2019-04-10 19:28:54
+[19]
+[19] Log opened at 2019-04-10 19:28:54
+[19] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[19] E: Time-out connecting to client (Waited: 200 ms). :-(
+[19] Log closed at 2019-04-10 19:28:54
+[19]
+[19] Log opened at 2019-04-10 19:28:54
+[19] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[19] E: Time-out connecting to client (Waited: 200 ms). :-(
+[19] Log closed at 2019-04-10 19:28:55
+[19]
+[19] Log opened at 2019-04-10 19:28:55
+[19] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[19] E: Time-out connecting to client (Waited: 200 ms). :-(
+[19] Log closed at 2019-04-10 19:28:55
+[19]
+[19] Log opened at 2019-04-10 19:28:55
+[19] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[19] E: Time-out connecting to client (Waited: 200 ms). :-(
+[19] Log closed at 2019-04-10 19:28:55
+[19]
+[19] Log opened at 2019-04-10 19:28:55
+[19] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[19] E: Time-out connecting to client (Waited: 200 ms). :-(
+[19] Log closed at 2019-04-10 19:28:55
+[19]
+[19] Log opened at 2019-04-10 19:28:55
+[19] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[19] E: Time-out connecting to client (Waited: 200 ms). :-(
+[19] Log closed at 2019-04-10 19:28:55
+[19]
+[20] Log opened at 2019-04-10 19:29:56
+[20] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[20] E: Time-out connecting to client (Waited: 200 ms). :-(
+[20] Log closed at 2019-04-10 19:29:56
+[20]
+[20] Log opened at 2019-04-10 19:30:00
+[20] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[20] E: Time-out connecting to client (Waited: 200 ms). :-(
+[20] Log closed at 2019-04-10 19:30:00
+[20]
+[20] Log opened at 2019-04-10 19:30:00
+[20] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[20] E: Time-out connecting to client (Waited: 200 ms). :-(
+[20] Log closed at 2019-04-10 19:30:00
+[20]
+[20] Log opened at 2019-04-10 19:30:00
+[20] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[20] E: Time-out connecting to client (Waited: 200 ms). :-(
+[20] Log closed at 2019-04-10 19:30:00
+[20]
+[20] Log opened at 2019-04-10 19:30:00
+[20] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[20] E: Time-out connecting to client (Waited: 200 ms). :-(
+[20] Log closed at 2019-04-10 19:30:00
+[20]
+[20] Log opened at 2019-04-10 19:30:00
+[20] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[20] E: Time-out connecting to client (Waited: 200 ms). :-(
+[20] Log closed at 2019-04-10 19:30:01
+[20]
+[20] Log opened at 2019-04-10 19:30:01
+[20] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[20] E: Time-out connecting to client (Waited: 200 ms). :-(
+[20] Log closed at 2019-04-10 19:30:01
+[20]
+[20] Log opened at 2019-04-10 19:30:01
+[20] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[20] E: Time-out connecting to client (Waited: 200 ms). :-(
+[20] Log closed at 2019-04-10 19:30:01
+[20]
+[20] Log opened at 2019-04-10 19:30:01
+[20] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[20] E: Time-out connecting to client (Waited: 200 ms). :-(
+[20] Log closed at 2019-04-10 19:30:01
+[20]
+[20] Log opened at 2019-04-10 19:30:01
+[20] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[20] E: Time-out connecting to client (Waited: 200 ms). :-(
+[20] Log closed at 2019-04-10 19:30:01
+[20]
+[20] Log opened at 2019-04-10 19:30:01
+[20] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[20] E: Time-out connecting to client (Waited: 200 ms). :-(
+[20] Log closed at 2019-04-10 19:30:02
+[20]
+[20] Log opened at 2019-04-10 19:30:02
+[20] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[20] E: Time-out connecting to client (Waited: 200 ms). :-(
+[20] Log closed at 2019-04-10 19:30:02
+[20]
+[21] Log opened at 2019-04-10 19:30:02
+[21] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[21] E: Time-out connecting to client (Waited: 200 ms). :-(
+[21] Log closed at 2019-04-10 19:30:02
+[21]
+[21] Log opened at 2019-04-10 19:30:04
+[21] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[21] E: Time-out connecting to client (Waited: 200 ms). :-(
+[21] Log closed at 2019-04-10 19:30:04
+[21]
+[21] Log opened at 2019-04-10 19:30:04
+[21] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[21] E: Time-out connecting to client (Waited: 200 ms). :-(
+[21] Log closed at 2019-04-10 19:30:05
+[21]
+[21] Log opened at 2019-04-10 19:30:05
+[21] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[21] E: Time-out connecting to client (Waited: 200 ms). :-(
+[21] Log closed at 2019-04-10 19:30:05
+[21]
+[21] Log opened at 2019-04-10 19:30:05
+[21] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[21] E: Time-out connecting to client (Waited: 200 ms). :-(
+[21] Log closed at 2019-04-10 19:30:05
+[21]
+[21] Log opened at 2019-04-10 19:30:05
+[21] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[21] E: Time-out connecting to client (Waited: 200 ms). :-(
+[21] Log closed at 2019-04-10 19:30:05
+[21]
+[21] Log opened at 2019-04-10 19:30:05
+[21] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[21] E: Time-out connecting to client (Waited: 200 ms). :-(
+[21] Log closed at 2019-04-10 19:30:06
+[21]
+[21] Log opened at 2019-04-10 19:30:06
+[21] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[21] E: Time-out connecting to client (Waited: 200 ms). :-(
+[21] Log closed at 2019-04-10 19:30:06
+[21]
+[21] Log opened at 2019-04-10 19:30:06
+[21] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[21] E: Time-out connecting to client (Waited: 200 ms). :-(
+[21] Log closed at 2019-04-10 19:30:06
+[21]
+[21] Log opened at 2019-04-10 19:30:06
+[21] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[21] E: Time-out connecting to client (Waited: 200 ms). :-(
+[21] Log closed at 2019-04-10 19:30:06
+[21]
+[21] Log opened at 2019-04-10 19:30:06
+[21] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[21] E: Time-out connecting to client (Waited: 200 ms). :-(
+[21] Log closed at 2019-04-10 19:30:06
+[21]
+[21] Log opened at 2019-04-10 19:30:06
+[21] I: Connecting to configured address/port: gateway.docker.internal:9000.
+[21] E: Time-out connecting to client (Waited: 200 ms). :-(
+[21] Log closed at 2019-04-10 19:30:07
+[21]
+[17] Log opened at 2019-04-10 19:32:45
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] I: Connected to client. :-)
+[17] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="17" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[17]
+[17] Log closed at 2019-04-10 19:32:49
+[17]
+[18] Log opened at 2019-04-10 19:32:49
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-10 19:32:52
+[18]
+[19] Log opened at 2019-04-10 19:33:10
+[19] I: Connecting to configured address/port: host.docker.internal:9000.
+[19] I: Connected to client. :-)
+[19] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="19" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[19]
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[19]
+[19] Log closed at 2019-04-10 19:33:13
+[19]
+[20] Log opened at 2019-04-10 19:33:13
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] I: Connected to client. :-)
+[20] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="20" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[20]
+[20] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[20]
+[20] Log closed at 2019-04-10 19:33:16
+[20]
+[21] Log opened at 2019-04-10 19:33:32
+[21] I: Connecting to configured address/port: host.docker.internal:9000.
+[21] I: Connected to client. :-)
+[21] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="21" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[21]
+[21] Log closed at 2019-04-10 19:33:35
+[21]
+[22] Log opened at 2019-04-10 19:33:35
+[22] I: Connecting to configured address/port: host.docker.internal:9000.
+[22] I: Connected to client. :-)
+[22] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="22" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[22]
+[22] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[22]
+[22] Log closed at 2019-04-10 19:33:38
+[22]
+[17] Log opened at 2019-04-11 11:01:18
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] I: Connected to client. :-)
+[17] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="17" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[17]
+[17] Log closed at 2019-04-11 11:01:23
+[17]
+[18] Log opened at 2019-04-11 11:01:23
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="18" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[18]
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+[18]
+[18] Log closed at 2019-04-11 11:01:26
+[18]
+[17] Log opened at 2019-04-12 23:32:12
+[17] I: Connecting to configured address/port: host.docker.internal:9000.
+[17] I: Connected to client. :-)
+[17] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="17" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[17]
+[17] <- breakpoint_list -i 1
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+[17]
+[17] <- breakpoint_set -i 2 -t line -f file:///var/www/html/public/index.php -n 19
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="170001"></response>
+[17]
+[17] <- breakpoint_set -i 3 -t line -f file:///var/www/html/public/index.php -n 20
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="3" id="170002"></response>
+[17]
+[17] <- breakpoint_list -i 4
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="20" state="enabled" hit_count="0" hit_value="0" id="170002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="19" state="enabled" hit_count="0" hit_value="0" id="170001"></breakpoint></response>
+[17]
+[17] <- breakpoint_list -i 5
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="5"><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="20" state="enabled" hit_count="0" hit_value="0" id="170002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="19" state="enabled" hit_count="0" hit_value="0" id="170001"></breakpoint></response>
+[17]
+[17] <- step_into -i 6
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="6" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="8"></xdebug:message></response>
+[17]
+[17] <- stack_get -i 7
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="7"><stack where="{main}" level="0" type="file" filename="file:///var/www/html/public/index.php" lineno="8"></stack></response>
+[17]
+[17] <- context_names -i 8 -d 0
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="8"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+[17]
+[17] <- context_get -i 9 -d 0 -c 0
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="9" context="0"><property name="$debug" fullname="$debug" type="uninitialized"></property><property name="$env" fullname="$env" type="uninitialized"></property><property name="$kernel" fullname="$kernel" type="uninitialized"></property><property name="$request" fullname="$request" type="uninitialized"></property><property name="$response" fullname="$response" type="uninitialized"></property><property name="$trustedHosts" fullname="$trustedHosts" type="uninitialized"></property><property name="$trustedProxies" fullname="$trustedProxies" type="uninitialized"></property></response>
+[17]
+[17] <- context_get -i 10 -d 0 -c 1
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="10" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="0" numchildren="0" page="0" pagesize="32"></property><property name="$_ENV" fullname="$_ENV" type="array" children="0" numchildren="0" page="0" pagesize="32"></property><property name="$_FILES" fullname="$_FILES" type="array" children="0" numchildren="0" page="0" pagesize="32"></property><property name="$_GET" fullname="$_GET" type="array" children="0" numchildren="0" page="0" pagesize="32"></property><property name="$_POST" fullname="$_POST" type="array" children="0" numchildren="0" page="0" pagesize="32"></property><property name="$_REQUEST" fullname="$_REQUEST" type="array" children="0" numchildren="0" page="0" pagesize="32"></property><property name="$_SERVER" fullname="$_SERVER" type="array" children="1" numchildren="35" page="0" pagesize="32"><property name="REDIRECT_STATUS" fullname="$_SERVER[&quot;REDIRECT_STATUS&quot;]" type="string" size="3" encoding="base64"><![CDATA[MjAw]]></property><property name="HTTP_HOST" fullname="$_SERVER[&quot;HTTP_HOST&quot;]" type="string" size="9" encoding="base64"><![CDATA[aG91c2VodW50]]></property><property name="HTTP_X_REAL_IP" fullname="$_SERVER[&quot;HTTP_X_REAL_IP&quot;]" type="string" size="10" encoding="base64"><![CDATA[MTcyLjE4LjAuMQ==]]></property><property name="HTTP_X_FORWARD_FOR" fullname="$_SERVER[&quot;HTTP_X_FORWARD_FOR&quot;]" type="string" size="10" encoding="base64"><![CDATA[MTcyLjE4LjAuMQ==]]></property><property name="HTTP_X_FORWARD_HOST" fullname="$_SERVER[&quot;HTTP_X_FORWARD_HOST&quot;]" type="string" size="9" encoding="base64"><![CDATA[aG91c2VodW50]]></property><property name="HTTP_CONNECTION" fullname="$_SERVER[&quot;HTTP_CONNECTION&quot;]" type="string" size="5" encoding="base64"><![CDATA[Y2xvc2U=]]></property><property name="HTTP_UPGRADE_INSECURE_REQUESTS" fullname="$_SERVER[&quot;HTTP_UPGRADE_INSECURE_REQUESTS&quot;]" type="string" size="1" encoding="base64"><![CDATA[MQ==]]></property><property name="HTTP_USER_AGENT" fullname="$_SERVER[&quot;HTTP_USER_AGENT&quot;]" type="string" size="121" encoding="base64"><![CDATA[TW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTRfNCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzczLjAuMzY4My4xMDMgU2FmYXJpLzUzNy4zNg==]]></property><property name="HTTP_ACCEPT" fullname="$_SERVER[&quot;HTTP_ACCEPT&quot;]" type="string" size="118" encoding="base64"><![CDATA[dGV4dC9odG1sLGFwcGxpY2F0aW9uL3hodG1sK3htbCxhcHBsaWNhdGlvbi94bWw7cT0wLjksaW1hZ2Uvd2VicCxpbWFnZS9hcG5nLCovKjtxPTAuOCxhcHBsaWNhdGlvbi9zaWduZWQtZXhjaGFuZ2U7dj1iMw==]]></property><property name="HTTP_ACCEPT_ENCODING" fullname="$_SERVER[&quot;HTTP_ACCEPT_ENCODING&quot;]" type="string" size="13" encoding="base64"><![CDATA[Z3ppcCwgZGVmbGF0ZQ==]]></property><property name="HTTP_ACCEPT_LANGUAGE" fullname="$_SERVER[&quot;HTTP_ACCEPT_LANGUAGE&quot;]" type="string" size="47" encoding="base64"><![CDATA[cHQtUFQscHQ7cT0wLjksZW4tR0I7cT0wLjgsZW47cT0wLjcsZW4tVVM7cT0wLjY=]]></property><property name="PATH" fullname="$_SERVER[&quot;PATH&quot;]" type="string" size="60" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmlu]]></property><property name="SERVER_SIGNATURE" fullname="$_SERVER[&quot;SERVER_SIGNATURE&quot;]" type="string" size="70" encoding="base64"><![CDATA[PGFkZHJlc3M+QXBhY2hlLzIuNC4yNSAoRGViaWFuKSBTZXJ2ZXIgYXQgaG91c2VodW50IFBvcnQgODA8L2FkZHJlc3M+Cg==]]></property><property name="SERVER_SOFTWARE" fullname="$_SERVER[&quot;SERVER_SOFTWARE&quot;]" type="string" size="22" encoding="base64"><![CDATA[QXBhY2hlLzIuNC4yNSAoRGViaWFuKQ==]]></property><property name="SERVER_NAME" fullname="$_SERVER[&quot;SERVER_NAME&quot;]" type="string" size="9" encoding="base64"><![CDATA[aG91c2VodW50]]></property><property name="SERVER_ADDR" fullname="$_SERVER[&quot;SERVER_ADDR&quot;]" type="string" size="10" encoding="base64"><![CDATA[MTcyLjE4LjAuNQ==]]></property><property name="SERVER_PORT" fullname="$_SERVER[&quot;SERVER_PORT&quot;]" type="string" size="2" encoding="base64"><![CDATA[ODA=]]></property><property name="REMOTE_ADDR" fullname="$_SERVER[&quot;REMOTE_ADDR&quot;]" type="string" size="10" encoding="base64"><![CDATA[MTcyLjE4LjAuMg==]]></property><property name="DOCUMENT_ROOT" fullname="$_SERVER[&quot;DOCUMENT_ROOT&quot;]" type="string" size="20" encoding="base64"><![CDATA[L3Zhci93d3cvaHRtbC9wdWJsaWM=]]></property><property name="REQUEST_SCHEME" fullname="$_SERVER[&quot;REQUEST_SCHEME&quot;]" type="string" size="4" encoding="base64"><![CDATA[aHR0cA==]]></property><property name="CONTEXT_PREFIX" fullname="$_SERVER[&quot;CONTEXT_PREFIX&quot;]" type="string" size="0" encoding="base64"><![CDATA[]]></property><property name="CONTEXT_DOCUMENT_ROOT" fullname="$_SERVER[&quot;CONTEXT_DOCUMENT_ROOT&quot;]" type="string" size="20" encoding="base64"><![CDATA[L3Zhci93d3cvaHRtbC9wdWJsaWM=]]></property><property name="SERVER_ADMIN" fullname="$_SERVER[&quot;SERVER_ADMIN&quot;]" type="string" size="19" encoding="base64"><![CDATA[d2VibWFzdGVyQGxvY2FsaG9zdA==]]></property><property name="SCRIPT_FILENAME" fullname="$_SERVER[&quot;SCRIPT_FILENAME&quot;]" type="string" size="30" encoding="base64"><![CDATA[L3Zhci93d3cvaHRtbC9wdWJsaWMvaW5kZXgucGhw]]></property><property name="REMOTE_PORT" fullname="$_SERVER[&quot;REMOTE_PORT&quot;]" type="string" size="5" encoding="base64"><![CDATA[MzU3OTQ=]]></property><property name="REDIRECT_URL" fullname="$_SERVER[&quot;REDIRECT_URL&quot;]" type="string" size="1" encoding="base64"><![CDATA[Lw==]]></property><property name="GATEWAY_INTERFACE" fullname="$_SERVER[&quot;GATEWAY_INTERFACE&quot;]" type="string" size="7" encoding="base64"><![CDATA[Q0dJLzEuMQ==]]></property><property name="SERVER_PROTOCOL" fullname="$_SERVER[&quot;SERVER_PROTOCOL&quot;]" type="string" size="8" encoding="base64"><![CDATA[SFRUUC8xLjA=]]></property><property name="REQUEST_METHOD" fullname="$_SERVER[&quot;REQUEST_METHOD&quot;]" type="string" size="3" encoding="base64"><![CDATA[R0VU]]></property><property name="QUERY_STRING" fullname="$_SERVER[&quot;QUERY_STRING&quot;]" type="string" size="0" encoding="base64"><![CDATA[]]></property><property name="REQUEST_URI" fullname="$_SERVER[&quot;REQUEST_URI&quot;]" type="string" size="1" encoding="base64"><![CDATA[Lw==]]></property><property name="SCRIPT_NAME" fullname="$_SERVER[&quot;SCRIPT_NAME&quot;]" type="string" size="10" encoding="base64"><![CDATA[L2luZGV4LnBocA==]]></property></property></response>
+[17]
+[17] <- context_get -i 11 -d 0 -c 2
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="11" context="2"></response>
+[17]
+[17] <- stop -i 12
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="12" status="stopped" reason="ok"></response>
+[17]
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="12" status="stopping" reason="ok"></response>
+[17]
+[17] Log closed at 2019-04-12 23:32:23
+[17]
+[18] Log opened at 2019-04-12 23:32:33
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-12 23:32:33
+[18]
+[18] Log opened at 2019-04-12 23:32:37
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-12 23:32:37
+[18]
+[18] Log opened at 2019-04-12 23:32:37
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-12 23:32:37
+[18]
+[18] Log opened at 2019-04-12 23:32:37
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-12 23:32:37
+[18]
+[18] Log opened at 2019-04-12 23:32:37
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-12 23:32:37
+[18]
+[18] Log opened at 2019-04-12 23:32:37
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-12 23:32:37
+[18]
+[18] Log opened at 2019-04-12 23:32:37
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-12 23:32:37
+[18]
+[18] Log opened at 2019-04-12 23:32:37
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-12 23:32:37
+[18]
+[18] Log opened at 2019-04-12 23:32:37
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-12 23:32:37
+[18]
+[18] Log opened at 2019-04-12 23:32:37
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-12 23:32:37
+[18]
+[18] Log opened at 2019-04-12 23:32:37
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-12 23:32:37
+[18]
+[18] Log opened at 2019-04-12 23:32:37
+[18] I: Connecting to configured address/port: host.docker.internal:9000.
+[18] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2019-04-12 23:32:37
+[18]
+[20] Log opened at 2019-04-12 23:32:37
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-04-12 23:32:37
+[20]
+[20] Log opened at 2019-04-12 23:32:40
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-04-12 23:32:40
+[20]
+[20] Log opened at 2019-04-12 23:32:40
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-04-12 23:32:40
+[20]
+[20] Log opened at 2019-04-12 23:32:40
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-04-12 23:32:40
+[20]
+[20] Log opened at 2019-04-12 23:32:40
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-04-12 23:32:40
+[20]
+[20] Log opened at 2019-04-12 23:32:40
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-04-12 23:32:40
+[20]
+[20] Log opened at 2019-04-12 23:32:40
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-04-12 23:32:40
+[20]
+[20] Log opened at 2019-04-12 23:32:40
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-04-12 23:32:40
+[20]
+[20] Log opened at 2019-04-12 23:32:40
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-04-12 23:32:40
+[20]
+[20] Log opened at 2019-04-12 23:32:40
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-04-12 23:32:40
+[20]
+[20] Log opened at 2019-04-12 23:32:40
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-04-12 23:32:40
+[20]
+[20] Log opened at 2019-04-12 23:32:40
+[20] I: Connecting to configured address/port: host.docker.internal:9000.
+[20] W: Creating socket for 'host.docker.internal:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2019-04-12 23:32:40
+[20]
+[21] Log opened at 2019-04-12 23:32:52
+[21] I: Connecting to configured address/port: host.docker.internal:9000.
+[21] I: Connected to client. :-)
+[21] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/public/index.php" language="PHP" xdebug:language_version="7.2.17" protocol_version="1.0" appid="21" idekey="VSCODE"><engine version="2.7.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2019 by Derick Rethans]]></copyright></init>
+[21]
+[21] <- breakpoint_list -i 1
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+[21]
+[21] <- breakpoint_set -i 2 -t line -f file:///var/www/html/public/index.php -n 19
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="210001"></response>
+[21]
+[21] <- breakpoint_set -i 3 -t line -f file:///var/www/html/public/index.php -n 20
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="3" id="210002"></response>
+[21]
+[21] <- breakpoint_list -i 4
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="20" state="enabled" hit_count="0" hit_value="0" id="210002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="19" state="enabled" hit_count="0" hit_value="0" id="210001"></breakpoint></response>
+[21]
+[21] <- breakpoint_list -i 5
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="5"><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="20" state="enabled" hit_count="0" hit_value="0" id="210002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="19" state="enabled" hit_count="0" hit_value="0" id="210001"></breakpoint></response>
+[21]
+[21] <- run -i 6
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="6" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="12"></xdebug:message></response>
+[21]
+[21] <- stack_get -i 7
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="7"><stack where="{main}" level="0" type="file" filename="file:///var/www/html/public/index.php" lineno="12"></stack></response>
+[21]
+[21] <- context_names -i 8 -d 0
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="8"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+[21]
+[21] <- context_get -i 9 -d 0 -c 0
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="9" context="0"><property name="$__composer_autoload_files" fullname="$__composer_autoload_files" type="array" children="1" numchildren="9" page="0" pagesize="32"><property name="92c8763cd6170fce6fcfe7e26b4e8c10" fullname="$__composer_autoload_files[&quot;92c8763cd6170fce6fcfe7e26b4e8c10&quot;]" type="bool"><![CDATA[1]]></property><property name="0e6d7bf4a5811bfa5cf40c5ccd6fae6a" fullname="$__composer_autoload_files[&quot;0e6d7bf4a5811bfa5cf40c5ccd6fae6a&quot;]" type="bool"><![CDATA[1]]></property><property name="25072dd6e2470089de65ae7bf11d3109" fullname="$__composer_autoload_files[&quot;25072dd6e2470089de65ae7bf11d3109&quot;]" type="bool"><![CDATA[1]]></property><property name="667aeda72477189d0494fecd327c3641" fullname="$__composer_autoload_files[&quot;667aeda72477189d0494fecd327c3641&quot;]" type="bool"><![CDATA[1]]></property><property name="6a47392539ca2329373e0d33e1dba053" fullname="$__composer_autoload_files[&quot;6a47392539ca2329373e0d33e1dba053&quot;]" type="bool"><![CDATA[1]]></property><property name="2c102faa651ef8ea5874edb585946bce" fullname="$__composer_autoload_files[&quot;2c102faa651ef8ea5874edb585946bce&quot;]" type="bool"><![CDATA[1]]></property><property name="c964ee0ededf28c96ebd9db5099ef910" fullname="$__composer_autoload_files[&quot;c964ee0ededf28c96ebd9db5099ef910&quot;]" type="bool"><![CDATA[1]]></property><property name="a0edc8309cc5e1d60e3047b5df6b7052" fullname="$__composer_autoload_files[&quot;a0edc8309cc5e1d60e3047b5df6b7052&quot;]" type="bool"><![CDATA[1]]></property><property name="37a3dc5111fe8f707ab4c132ef1dbc62" fullname="$__composer_autoload_files[&quot;37a3dc5111fe8f707ab4c132ef1dbc62&quot;]" type="bool"><![CDATA[1]]></property></property><property name="$debug" fullname="$debug" type="uninitialized"></property><property name="$env" fullname="$env" type="uninitialized"></property><property name="$kernel" fullname="$kernel" type="uninitialized"></property><property name="$request" fullname="$request" type="uninitialized"></property><property name="$response" fullname="$response" type="uninitialized"></property><property name="$trustedHosts" fullname="$trustedHosts" type="uninitialized"></property><property name="$trustedProxies" fullname="$trustedProxies" type="uninitialized"></property></response>
+[21]
+[21] <- context_get -i 10 -d 0 -c 1
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="10" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="0" numchildren="0" page="0" pagesize="32"></property><property name="$_ENV" fullname="$_ENV" type="array" children="0" numchildren="0" page="0" pagesize="32"></property><property name="$_FILES" fullname="$_FILES" type="array" children="0" numchildren="0" page="0" pagesize="32"></property><property name="$_GET" fullname="$_GET" type="array" children="0" numchildren="0" page="0" pagesize="32"></property><property name="$_POST" fullname="$_POST" type="array" children="0" numchildren="0" page="0" pagesize="32"></property><property name="$_REQUEST" fullname="$_REQUEST" type="array" children="0" numchildren="0" page="0" pagesize="32"></property><property name="$_SERVER" fullname="$_SERVER" type="array" children="1" numchildren="36" page="0" pagesize="32"><property name="REDIRECT_STATUS" fullname="$_SERVER[&quot;REDIRECT_STATUS&quot;]" type="string" size="3" encoding="base64"><![CDATA[MjAw]]></property><property name="HTTP_HOST" fullname="$_SERVER[&quot;HTTP_HOST&quot;]" type="string" size="9" encoding="base64"><![CDATA[aG91c2VodW50]]></property><property name="HTTP_X_REAL_IP" fullname="$_SERVER[&quot;HTTP_X_REAL_IP&quot;]" type="string" size="10" encoding="base64"><![CDATA[MTcyLjE4LjAuMQ==]]></property><property name="HTTP_X_FORWARD_FOR" fullname="$_SERVER[&quot;HTTP_X_FORWARD_FOR&quot;]" type="string" size="10" encoding="base64"><![CDATA[MTcyLjE4LjAuMQ==]]></property><property name="HTTP_X_FORWARD_HOST" fullname="$_SERVER[&quot;HTTP_X_FORWARD_HOST&quot;]" type="string" size="9" encoding="base64"><![CDATA[aG91c2VodW50]]></property><property name="HTTP_CONNECTION" fullname="$_SERVER[&quot;HTTP_CONNECTION&quot;]" type="string" size="5" encoding="base64"><![CDATA[Y2xvc2U=]]></property><property name="HTTP_CACHE_CONTROL" fullname="$_SERVER[&quot;HTTP_CACHE_CONTROL&quot;]" type="string" size="9" encoding="base64"><![CDATA[bWF4LWFnZT0w]]></property><property name="HTTP_UPGRADE_INSECURE_REQUESTS" fullname="$_SERVER[&quot;HTTP_UPGRADE_INSECURE_REQUESTS&quot;]" type="string" size="1" encoding="base64"><![CDATA[MQ==]]></property><property name="HTTP_USER_AGENT" fullname="$_SERVER[&quot;HTTP_USER_AGENT&quot;]" type="string" size="121" encoding="base64"><![CDATA[TW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTRfNCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzczLjAuMzY4My4xMDMgU2FmYXJpLzUzNy4zNg==]]></property><property name="HTTP_ACCEPT" fullname="$_SERVER[&quot;HTTP_ACCEPT&quot;]" type="string" size="118" encoding="base64"><![CDATA[dGV4dC9odG1sLGFwcGxpY2F0aW9uL3hodG1sK3htbCxhcHBsaWNhdGlvbi94bWw7cT0wLjksaW1hZ2Uvd2VicCxpbWFnZS9hcG5nLCovKjtxPTAuOCxhcHBsaWNhdGlvbi9zaWduZWQtZXhjaGFuZ2U7dj1iMw==]]></property><property name="HTTP_ACCEPT_ENCODING" fullname="$_SERVER[&quot;HTTP_ACCEPT_ENCODING&quot;]" type="string" size="13" encoding="base64"><![CDATA[Z3ppcCwgZGVmbGF0ZQ==]]></property><property name="HTTP_ACCEPT_LANGUAGE" fullname="$_SERVER[&quot;HTTP_ACCEPT_LANGUAGE&quot;]" type="string" size="47" encoding="base64"><![CDATA[cHQtUFQscHQ7cT0wLjksZW4tR0I7cT0wLjgsZW47cT0wLjcsZW4tVVM7cT0wLjY=]]></property><property name="PATH" fullname="$_SERVER[&quot;PATH&quot;]" type="string" size="60" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmlu]]></property><property name="SERVER_SIGNATURE" fullname="$_SERVER[&quot;SERVER_SIGNATURE&quot;]" type="string" size="70" encoding="base64"><![CDATA[PGFkZHJlc3M+QXBhY2hlLzIuNC4yNSAoRGViaWFuKSBTZXJ2ZXIgYXQgaG91c2VodW50IFBvcnQgODA8L2FkZHJlc3M+Cg==]]></property><property name="SERVER_SOFTWARE" fullname="$_SERVER[&quot;SERVER_SOFTWARE&quot;]" type="string" size="22" encoding="base64"><![CDATA[QXBhY2hlLzIuNC4yNSAoRGViaWFuKQ==]]></property><property name="SERVER_NAME" fullname="$_SERVER[&quot;SERVER_NAME&quot;]" type="string" size="9" encoding="base64"><![CDATA[aG91c2VodW50]]></property><property name="SERVER_ADDR" fullname="$_SERVER[&quot;SERVER_ADDR&quot;]" type="string" size="10" encoding="base64"><![CDATA[MTcyLjE4LjAuNQ==]]></property><property name="SERVER_PORT" fullname="$_SERVER[&quot;SERVER_PORT&quot;]" type="string" size="2" encoding="base64"><![CDATA[ODA=]]></property><property name="REMOTE_ADDR" fullname="$_SERVER[&quot;REMOTE_ADDR&quot;]" type="string" size="10" encoding="base64"><![CDATA[MTcyLjE4LjAuMg==]]></property><property name="DOCUMENT_ROOT" fullname="$_SERVER[&quot;DOCUMENT_ROOT&quot;]" type="string" size="20" encoding="base64"><![CDATA[L3Zhci93d3cvaHRtbC9wdWJsaWM=]]></property><property name="REQUEST_SCHEME" fullname="$_SERVER[&quot;REQUEST_SCHEME&quot;]" type="string" size="4" encoding="base64"><![CDATA[aHR0cA==]]></property><property name="CONTEXT_PREFIX" fullname="$_SERVER[&quot;CONTEXT_PREFIX&quot;]" type="string" size="0" encoding="base64"><![CDATA[]]></property><property name="CONTEXT_DOCUMENT_ROOT" fullname="$_SERVER[&quot;CONTEXT_DOCUMENT_ROOT&quot;]" type="string" size="20" encoding="base64"><![CDATA[L3Zhci93d3cvaHRtbC9wdWJsaWM=]]></property><property name="SERVER_ADMIN" fullname="$_SERVER[&quot;SERVER_ADMIN&quot;]" type="string" size="19" encoding="base64"><![CDATA[d2VibWFzdGVyQGxvY2FsaG9zdA==]]></property><property name="SCRIPT_FILENAME" fullname="$_SERVER[&quot;SCRIPT_FILENAME&quot;]" type="string" size="30" encoding="base64"><![CDATA[L3Zhci93d3cvaHRtbC9wdWJsaWMvaW5kZXgucGhw]]></property><property name="REMOTE_PORT" fullname="$_SERVER[&quot;REMOTE_PORT&quot;]" type="string" size="5" encoding="base64"><![CDATA[MzU4NjA=]]></property><property name="REDIRECT_URL" fullname="$_SERVER[&quot;REDIRECT_URL&quot;]" type="string" size="1" encoding="base64"><![CDATA[Lw==]]></property><property name="GATEWAY_INTERFACE" fullname="$_SERVER[&quot;GATEWAY_INTERFACE&quot;]" type="string" size="7" encoding="base64"><![CDATA[Q0dJLzEuMQ==]]></property><property name="SERVER_PROTOCOL" fullname="$_SERVER[&quot;SERVER_PROTOCOL&quot;]" type="string" size="8" encoding="base64"><![CDATA[SFRUUC8xLjA=]]></property><property name="REQUEST_METHOD" fullname="$_SERVER[&quot;REQUEST_METHOD&quot;]" type="string" size="3" encoding="base64"><![CDATA[R0VU]]></property><property name="QUERY_STRING" fullname="$_SERVER[&quot;QUERY_STRING&quot;]" type="string" size="0" encoding="base64"><![CDATA[]]></property><property name="REQUEST_URI" fullname="$_SERVER[&quot;REQUEST_URI&quot;]" type="string" size="1" encoding="base64"><![CDATA[Lw==]]></property></property><property name="$GLOBALS" fullname="$GLOBALS" type="array" children="1" numchildren="16" page="0" pagesize="32"><property name="_GET" fullname="$GLOBALS[&quot;_GET&quot;]" type="array" children="0" numchildren="0"></property><property name="_POST" fullname="$GLOBALS[&quot;_POST&quot;]" type="array" children="0" numchildren="0"></property><property name="_COOKIE" fullname="$GLOBALS[&quot;_COOKIE&quot;]" type="array" children="0" numchildren="0"></property><property name="_FILES" fullname="$GLOBALS[&quot;_FILES&quot;]" type="array" children="0" numchildren="0"></property><property name="_ENV" fullname="$GLOBALS[&quot;_ENV&quot;]" type="array" children="0" numchildren="0"></property><property name="_REQUEST" fullname="$GLOBALS[&quot;_REQUEST&quot;]" type="array" children="0" numchildren="0"></property><property name="_SERVER" fullname="$GLOBALS[&quot;_SERVER&quot;]" type="array" children="1" numchildren="36"></property><property name="GLOBALS" fullname="$GLOBALS[&quot;GLOBALS&quot;]" type="array" children="1" recursive="1"></property><property name="__composer_autoload_files" fullname="$GLOBALS[&quot;__composer_autoload_files&quot;]" type="array" children="1" numchildren="9"></property></property></response>
+[21]
+[21] <- context_get -i 11 -d 0 -c 2
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="11" context="2"></response>
+[21]
+[21] <- breakpoint_list -i 12
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="12"><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="20" state="enabled" hit_count="0" hit_value="0" id="210002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="19" state="enabled" hit_count="0" hit_value="0" id="210001"></breakpoint></response>
+[21]
+[21] <- breakpoint_remove -i 13 -d 210002
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_remove" transaction_id="13"><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="20" state="enabled" hit_count="0" hit_value="0" id="210002"></breakpoint></response>
+[21]
+[21] <- breakpoint_remove -i 14 -d 210001
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_remove" transaction_id="14"><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="19" state="enabled" hit_count="0" hit_value="0" id="210001"></breakpoint></response>
+[21]
+[21] <- breakpoint_set -i 15 -t line -f file:///var/www/html/public/index.php -n 19
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="210003"></response>
+[21]
+[21] <- breakpoint_set -i 16 -t line -f file:///var/www/html/public/index.php -n 20
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="16" id="210004"></response>
+[21]
+[21] <- run -i 17
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="17" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="19"></xdebug:message></response>
+[21]
+[21] <- stack_get -i 18
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="18"><stack where="{main}" level="0" type="file" filename="file:///var/www/html/public/index.php" lineno="19"></stack></response>
+[21]
+[21] <- context_names -i 19 -d 0
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="19"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+[21]
+[21] <- context_get -i 20 -d 0 -c 0
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="20" context="0"><property name="$__composer_autoload_files" fullname="$__composer_autoload_files" type="array" children="1" numchildren="9" page="0" pagesize="32"><property name="92c8763cd6170fce6fcfe7e26b4e8c10" fullname="$__composer_autoload_files[&quot;92c8763cd6170fce6fcfe7e26b4e8c10&quot;]" type="bool"><![CDATA[1]]></property><property name="0e6d7bf4a5811bfa5cf40c5ccd6fae6a" fullname="$__composer_autoload_files[&quot;0e6d7bf4a5811bfa5cf40c5ccd6fae6a&quot;]" type="bool"><![CDATA[1]]></property><property name="25072dd6e2470089de65ae7bf11d3109" fullname="$__composer_autoload_files[&quot;25072dd6e2470089de65ae7bf11d3109&quot;]" type="bool"><![CDATA[1]]></property><property name="667aeda72477189d0494fecd327c3641" fullname="$__composer_autoload_files[&quot;667aeda72477189d0494fecd327c3641&quot;]" type="bool"><![CDATA[1]]></property><property name="6a47392539ca2329373e0d33e1dba053" fullname="$__composer_autoload_files[&quot;6a47392539ca2329373e0d33e1dba053&quot;]" type="bool"><![CDATA[1]]></property><property name="2c102faa651ef8ea5874edb585946bce" fullname="$__composer_autoload_files[&quot;2c102faa651ef8ea5874edb585946bce&quot;]" type="bool"><![CDATA[1]]></property><property name="c964ee0ededf28c96ebd9db5099ef910" fullname="$__composer_autoload_files[&quot;c964ee0ededf28c96ebd9db5099ef910&quot;]" type="bool"><![CDATA[1]]></property><property name="a0edc8309cc5e1d60e3047b5df6b7052" fullname="$__composer_autoload_files[&quot;a0edc8309cc5e1d60e3047b5df6b7052&quot;]" type="bool"><![CDATA[1]]></property><property name="37a3dc5111fe8f707ab4c132ef1dbc62" fullname="$__composer_autoload_files[&quot;37a3dc5111fe8f707ab4c132ef1dbc62&quot;]" type="bool"><![CDATA[1]]></property></property><property name="$debug" fullname="$debug" type="uninitialized"></property><property name="$env" fullname="$env" type="uninitialized"></property><property name="$kernel" fullname="$kernel" type="uninitialized"></property><property name="$request" fullname="$request" type="uninitialized"></property><property name="$response" fullname="$response" type="uninitialized"></property><property name="$trustedHosts" fullname="$trustedHosts" type="uninitialized"></property><property name="$trustedProxies" fullname="$trustedProxies" type="uninitialized"></property></response>
+[21]
+[21] <- run -i 21
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="21" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/public/index.php" lineno="20"></xdebug:message></response>
+[21]
+[21] <- stack_get -i 22
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="22"><stack where="{main}" level="0" type="file" filename="file:///var/www/html/public/index.php" lineno="20"></stack></response>
+[21]
+[21] <- context_names -i 23 -d 0
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="23"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+[21]
+[21] <- context_get -i 24 -d 0 -c 0
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="24" context="0"><property name="$__composer_autoload_files" fullname="$__composer_autoload_files" type="array" children="1" numchildren="9" page="0" pagesize="32"><property name="92c8763cd6170fce6fcfe7e26b4e8c10" fullname="$__composer_autoload_files[&quot;92c8763cd6170fce6fcfe7e26b4e8c10&quot;]" type="bool"><![CDATA[1]]></property><property name="0e6d7bf4a5811bfa5cf40c5ccd6fae6a" fullname="$__composer_autoload_files[&quot;0e6d7bf4a5811bfa5cf40c5ccd6fae6a&quot;]" type="bool"><![CDATA[1]]></property><property name="25072dd6e2470089de65ae7bf11d3109" fullname="$__composer_autoload_files[&quot;25072dd6e2470089de65ae7bf11d3109&quot;]" type="bool"><![CDATA[1]]></property><property name="667aeda72477189d0494fecd327c3641" fullname="$__composer_autoload_files[&quot;667aeda72477189d0494fecd327c3641&quot;]" type="bool"><![CDATA[1]]></property><property name="6a47392539ca2329373e0d33e1dba053" fullname="$__composer_autoload_files[&quot;6a47392539ca2329373e0d33e1dba053&quot;]" type="bool"><![CDATA[1]]></property><property name="2c102faa651ef8ea5874edb585946bce" fullname="$__composer_autoload_files[&quot;2c102faa651ef8ea5874edb585946bce&quot;]" type="bool"><![CDATA[1]]></property><property name="c964ee0ededf28c96ebd9db5099ef910" fullname="$__composer_autoload_files[&quot;c964ee0ededf28c96ebd9db5099ef910&quot;]" type="bool"><![CDATA[1]]></property><property name="a0edc8309cc5e1d60e3047b5df6b7052" fullname="$__composer_autoload_files[&quot;a0edc8309cc5e1d60e3047b5df6b7052&quot;]" type="bool"><![CDATA[1]]></property><property name="37a3dc5111fe8f707ab4c132ef1dbc62" fullname="$__composer_autoload_files[&quot;37a3dc5111fe8f707ab4c132ef1dbc62&quot;]" type="bool"><![CDATA[1]]></property></property><property name="$debug" fullname="$debug" type="uninitialized"></property><property name="$env" fullname="$env" type="string" size="3" encoding="base64"><![CDATA[ZGV2]]></property><property name="$kernel" fullname="$kernel" type="uninitialized"></property><property name="$request" fullname="$request" type="uninitialized"></property><property name="$response" fullname="$response" type="uninitialized"></property><property name="$trustedHosts" fullname="$trustedHosts" type="uninitialized"></property><property name="$trustedProxies" fullname="$trustedProxies" type="uninitialized"></property></response>
+[21]
+[21] <- breakpoint_list -i 25
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="25"><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="20" state="enabled" hit_count="1" hit_value="0" id="210004"></breakpoint><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="19" state="enabled" hit_count="1" hit_value="0" id="210003"></breakpoint></response>
+[21]
+[21] <- breakpoint_remove -i 26 -d 210004
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_remove" transaction_id="26"><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="20" state="enabled" hit_count="1" hit_value="0" id="210004"></breakpoint></response>
+[21]
+[21] <- breakpoint_remove -i 27 -d 210003
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_remove" transaction_id="27"><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="19" state="enabled" hit_count="1" hit_value="0" id="210003"></breakpoint></response>
+[21]
+[21] <- breakpoint_set -i 28 -t line -f file:///var/www/html/public/index.php -n 20
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="28" id="210005"></response>
+[21]
+[21] <- breakpoint_list -i 29
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="29"><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="20" state="enabled" hit_count="0" hit_value="0" id="210005"></breakpoint></response>
+[21]
+[21] <- breakpoint_remove -i 30 -d 210005
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_remove" transaction_id="30"><breakpoint type="line" filename="file:///var/www/html/public/index.php" lineno="20" state="enabled" hit_count="0" hit_value="0" id="210005"></breakpoint></response>
+[21]
+[21] <- stop -i 31
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="31" status="stopped" reason="ok"></response>
+[21]
+[21] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="31" status="stopping" reason="ok"></response>
+[21]
+[21] Log closed at 2019-04-12 23:33:10
+[21]

@@ -93,7 +93,7 @@ build: ##@servers Builds the project
 setup: ##@servers Sets up all containers
 	make build
 	docker-compose up -d
-	make start
+	# make start
 	make open
 	#make setup-doctrine
 .PHONY: setup
