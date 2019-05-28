@@ -1,0 +1,9 @@
+actor: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver:
+            url: 'http://web'
+            browser: chrome
+            host: 'selenium-hub'
+        - \App\Tests\Helper\Acceptance
+        - Db

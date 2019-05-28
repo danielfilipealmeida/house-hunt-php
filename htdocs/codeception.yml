@@ -1,0 +1,32 @@
+namespace: App\Tests
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/_support
+    envs: tests/_envs
+actor_suffix: Tester
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+params:
+    - .env
+
+
+modules:
+    enabled:
+        Db
+    config:
+        Db:
+            dsn: 'mysql:host=db;dbname=house_hunt_test'
+            user: 'root'
+            password: 'passpass'
+            dump: 'tests/_data/empty_database.sql'
+            populate: true
+            cleanup: true # load dump for each test
+
+#        Db:
+#            dsn: 'mysql:host=db;dbname=house_hunt_test'
+#            user: 'root'
+#            password: 'passpass'
+#            dump: tests/_data/empty_database.sql

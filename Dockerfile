@@ -10,7 +10,8 @@ RUN echo "Setting up Web Container" \
         iputils-ping \
         netcat \
         jnettop \
-        telnet
+        telnet \
+        mariadb-client
 
 RUN pecl install memcached-3.0.4 \
     && pecl install xdebug-2.7.1

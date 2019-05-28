@@ -1,4 +1,7 @@
 <phpunit bootstrap="vendor/autoload.php">
+  <php>
+    <env name="DATABASE_URL" value="mysql://root:passpass@db:3306/house_hunt_test"/>
+  </php>
   <testsuites>
     <testsuite name="tests">
       <directory>tests</directory>

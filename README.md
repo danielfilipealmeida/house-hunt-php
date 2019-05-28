@@ -19,8 +19,23 @@ Memcached Cheat Sheet
 https://lzone.de/cheat-sheet/memcached
 
 
+## Data
+
+### Maria DB
+
+- Database: house-hunt
+- User: root
+- Password: passpass
+
+### User
+
+
 ## WORK TO DO
 
 - Use the stored searches when running the fetcher
 - store the search results
 - display the search results on the frontend
+- use Graphql
+- setup and use Selenium
+
+

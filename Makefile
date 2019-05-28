@@ -7,6 +7,7 @@ CONT_REVERSEPROXY=reverseproxy
 CONT_WEB=web
 CONT_DB=db
 DATABASE=house_hunt
+DATABASE_TEST=$(DATABASE)_test
 DB_PASSWORD=passpass
 
 
@@ -73,29 +74,37 @@ help: ##@other Show this help.
 open: ##@other Opens all containers in browser tabs.
 	open http://househunt/
 	open http://adminer/
+	open http://selenium:4444/grid/console
 .PHONY: help
 
 setup-doctrine: ##@doctrine Drops and re-creates the database with data
-	make dropdatabase
+	make drop-database
 	make console COM="doctrine:database:create"
-	#make console COM="make:migration"
 	make console COM="doctrine:migrations:migrate"
+	make create-test-database
 .PHONY: setup-doctrine
 
 create-migration: ##@doctrine Creates a new migration
 	make console COM="make:migration"
 .PHONY: create-migration
 
+load-seed-data: ##@doctrine Load Development Database Fixtures
+	make console COM="doctrine:fixtures:load"
+.PHONY: load-seed-data
+
 build: ##@servers Builds the project
-	docker-compose build
+	docker-compose build --pull --parallel --force-rm
 .PHONY: build
 
 setup: ##@servers Sets up all containers
+	docker-compose down
 	make build
 	docker-compose up -d
-	# make start
+	make start
+	make setup-doctrine
+	make load-seed-data
 	make open
-	#make setup-doctrine
+
 .PHONY: setup
 
 clean: ##@servers Tears down all containers
@@ -128,7 +137,7 @@ composer: ##@servers Run a composer command inside the web container
 	docker-compose exec $(CONT_WEB) bin/composer $(COM)
 .PHONY: composer
 
-console: ##@servers Run a composer console inside the web container
+console: ##@servers Run console inside the web container
 	docker-compose exec $(CONT_WEB) bin/console $(COM)
 .PHONY: console
 
@@ -156,14 +165,18 @@ mysql: ##@database Run a command inside the databse container
 	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) --database=$(DATABASE) -e "$(COM)"
 .PHONY: mysql
 
-dropdatabase: ##@database Deletes the database
+drop-database: ##@database Deletes the database
 	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) -e "DROP DATABASE IF EXISTS $(DATABASE);"
-.PHONY: dropdatabase
+.PHONY: drop-database
+
+create-test-database:
+	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) -e "CREATE DATABASE IF NOT EXISTS $(DATABASE_TEST);"
+.PHONY: create-test-database
 
 
-createdatabase: ##@database Creates the database
+create-database: ##@database Creates the database
 	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) -e "CREATE DATABASE IF NOT EXISTS $(DATABASE);"
-.PHONY: createdatabase
+.PHONY: create-database
 
 fetchdata: ##@commands Use commands to fetch all data from APIs
 	make console COM="idealista:fetch"
@@ -173,3 +186,20 @@ fetchdata: ##@commands Use commands to fetch all data from APIs
 cache-clear: ##@dev Clear the cache
 	make console COM="cache:clear"
 .PHONY: cache-clear
+
+unit-tests: ##@testing Run the unit tests
+	make run COM="bin/phpunit tests/unit/"
+.PHONY: unit-tests
+
+#acceptance-tests: ##@testing Run the acceptance tests
+#	make run COM="vendor/bin/codecept run acceptance"
+#.PHONY: acceptance-tests
+
+all-codeception-tests: ##@testing Run all tests using codeception
+	make run COM="vendor/bin/codecept run"
+.PHONY: all-codeception-tests
+
+
+acceptance-test: ##@testing Run Acceptance tests. example: make acceptance-test FILTER="FirstCest:canLogin"
+	make run COM="vendor/bin/codecept run acceptance $(FILTER)"
+.PHONY: acceptance-test
