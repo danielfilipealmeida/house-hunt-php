@@ -2,6 +2,7 @@
 
 namespace App\Tests\Service;
 
+use App\Entity\Search;
 use GuzzleHttp\Client;
 use GuzzleHttp\Response;
 use App\Service\Idealista;
@@ -185,5 +186,17 @@ class IdealistaTest extends TestCase
 
         $this->assertNotNull($result);
 
+    }
+
+    public function testMapToIdealistSearchArray() {
+
+        /** @var Search $search */
+        $search = new Search();
+
+        /** @var Memcached $memcached */
+        $memcached = $this->createMock(Memcached::class);
+
+        $idealista = new Idealista($memcached);
+        $result = $idealista->mapToIdealistSearchArray($search);
     }
 }

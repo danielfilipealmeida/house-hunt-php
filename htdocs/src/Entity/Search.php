@@ -33,6 +33,31 @@ class Search
      */
     private $searchResults;
 
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $latitude;
+
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $longitude;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $radius;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $minPrice;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $maxPrice;
+
     public function __construct()
     {
         $this->searchResults = new ArrayCollection();
@@ -94,6 +119,66 @@ class Search
                 $searchResult->setSearch(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getLatitude(): ?float
+    {
+        return $this->latitude;
+    }
+
+    public function setLatitude(float $latitude): self
+    {
+        $this->latitude = $latitude;
+
+        return $this;
+    }
+
+    public function getLongitude(): ?float
+    {
+        return $this->longitude;
+    }
+
+    public function setLongitude(float $longitude): self
+    {
+        $this->longitude = $longitude;
+
+        return $this;
+    }
+
+    public function getRadius(): ?int
+    {
+        return $this->radius;
+    }
+
+    public function setRadius(int $radius): self
+    {
+        $this->radius = $radius;
+
+        return $this;
+    }
+
+    public function getMinPrice(): ?int
+    {
+        return $this->minPrice;
+    }
+
+    public function setMinPrice(int $minPrice): self
+    {
+        $this->minPrice = $minPrice;
+
+        return $this;
+    }
+
+    public function getMaxPrice(): ?int
+    {
+        return $this->maxPrice;
+    }
+
+    public function setMaxPrice(int $maxPrice): self
+    {
+        $this->maxPrice = $maxPrice;
 
         return $this;
     }

@@ -78,10 +78,7 @@ open: ##@other Opens all containers in browser tabs.
 .PHONY: help
 
 setup-doctrine: ##@doctrine Drops and re-creates the database with data
-	make drop-database
-	make console COM="doctrine:database:create"
-	make console COM="doctrine:migrations:migrate"
-	make create-test-database
+	docker-compose exec $(CONT_WEB) sh /var/www/html/setup-doctrine.sh
 .PHONY: setup-doctrine
 
 create-migration: ##@doctrine Creates a new migration
@@ -89,7 +86,7 @@ create-migration: ##@doctrine Creates a new migration
 .PHONY: create-migration
 
 load-seed-data: ##@doctrine Load Development Database Fixtures
-	make console COM="doctrine:fixtures:load"
+	make console COM="doctrine:fixtures:load -n"
 .PHONY: load-seed-data
 
 build: ##@servers Builds the project
@@ -113,7 +110,7 @@ clean: ##@servers Tears down all containers
 .PHONY: clean
 
 start: ##@servers Starts all containers
-	docker-compose start
+	docker-compose up -d
 .PHONY: start
 
 stop: ##@servers Stops all containers
@@ -200,6 +197,6 @@ all-codeception-tests: ##@testing Run all tests using codeception
 .PHONY: all-codeception-tests
 
 
-acceptance-test: ##@testing Run Acceptance tests. example: make acceptance-test FILTER="FirstCest:canLogin"
+acceptance-tests: ##@testing Run Acceptance tests. example: make acceptance-tests FILTER="FirstCest:canLogin"
 	make run COM="vendor/bin/codecept run acceptance $(FILTER)"
-.PHONY: acceptance-test
+.PHONY: acceptance-tests

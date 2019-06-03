@@ -2,7 +2,21 @@
 
 namespace App\Service;
 
+use App\Entity\Search;
 use GuzzleHttp\Client;
+
+abstract class Operation {
+    const SALE = 0;
+    const RENT = 1;
+}
+
+abstract class PropertyType {
+    const HOMES = 0;
+    const OFFICES = 1;
+    const PREMISES = 2;
+    const GARAGES = 3;
+    const BEDROOMS = 4;
+}
 
 class Idealista
 {
@@ -102,7 +116,8 @@ class Idealista
      *
      * @return array
      *
-     * @throws Exception
+     * @throws \Exception
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getBearerCodeFromServer(): array
     {
@@ -152,6 +167,7 @@ class Idealista
      *  - on the idealista oauth endpoint
      *
      * @return array
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getBearerCode(): array
     {
@@ -225,6 +241,8 @@ class Idealista
      * Searches in the Idealista API using the search parameters provided.
      *
      * @param array $searchParameters
+     * @return any|mixed
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function search($searchParameters)
     {
@@ -271,7 +289,7 @@ class Idealista
      */
     public static function getSearchParametersString($searchParameters): string
     {
-        return join('&', array_map(
+        return implode('&', array_map(
             function ($value, string $key) {
                 if (gettype($value) == 'boolean') {
                     $value = $value ? 'true' : 'false';
@@ -282,5 +300,18 @@ class Idealista
             $searchParameters,
             array_keys($searchParameters)
         ));
+    }
+
+
+    /**
+     * Maps a Search record to a Idealista Search Array
+     * @param Search $search
+     * @return array
+     *
+     * THIS MIGHT NEED TO GO TO A NEW OBJECT!!!!!
+     */
+    public function mapToIdealistSearchArray(Search $search) {
+
+        return [];
     }
 }

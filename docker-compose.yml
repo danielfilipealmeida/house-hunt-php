@@ -6,6 +6,10 @@ services:
             - "80:80"
             - "18081:18081"
         restart: "no"
+        depends_on:
+          - web
+          - adminer
+          - mailcatcher
             
     web:
         build: .
@@ -18,12 +22,14 @@ services:
             - ./docker/web/000-default.conf:/etc/apache2/sites-available/000-default.conf
             - ./docker/web/php.ini:/usr/local/etc/php/php.ini
             - ./docker/web/apache2.conf:/etc/apache2/apache2.conf
-        #environment:
+            - ./docker/web/setup-doctrine.sh:/var/www/html/setup-doctrine.sh
+        environment:
+            DATABASE: house_hunt
+            DATABASE_TEST: house_hunt_test
+            DB_PASSWORD: passpass
         #     XDEBUG_CONFIG: "idekey=VSCODE"
         #     VIRTUAL_HOST: "househunt"
         #     PHP_IDE_CONFIG: "serverName=Test"
-        depends_on:
-            - reverseproxy
         restart: "no"
 
     db:
@@ -35,16 +41,12 @@ services:
             - "13306:3306"
         #volumes:
         #    - ./docker/mariadb/datadir:/var/lib/mysql
-        depends_on:
-            - reverseproxy
         restart: "no"
            
     adminer:
         image: adminer
         ports:
             - "8081:8080"
-        depends_on:
-            - reverseproxy
         environment:
             - VIRTUAL_HOST=adminer
         restart: "no"
@@ -52,9 +54,7 @@ services:
     mailcatcher:
         image: schickling/mailcatcher
 
-#    graphql:
-#        image:
-
+#######
 # Selenium config
 
     selenium-hub:
