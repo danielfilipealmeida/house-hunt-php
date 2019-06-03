@@ -4,6 +4,12 @@ namespace App\Controller;
 
 use App\Entity\Search;
 use App\Service\Breadcrumb;
+use Doctrine\DBAL\Types\FloatType;
+use Symfony\Component\Form\Extension\Core\Type\CurrencyType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
+use Symfony\Component\Form\Extension\Core\Type\MoneyType;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
+use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Form;
@@ -78,6 +84,8 @@ class SearchController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $search = $form->getData();
 
+            $search = setConfigurationField($search);
+
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($search);
             $entityManager->flush();
@@ -101,16 +109,27 @@ class SearchController extends AbstractController
         );
     }
 
+    private function setConfigurationField($search) {
+        $search['configuration'] = '';
+        return $search;
+    }
+
     /**
      * Creates a form for the given Search.
      *
      * @param Search $search
+     * @return FormInterface
      */
-    public function createFormForSearch(Search $search): Form
+    public function createFormForSearch(Search $search): FormInterface
     {
         return $this->createFormBuilder($search)
-        ->add('title', TextType::class)
-        ->add('save', SubmitType::class, ['label' => 'Save Search', 'attr' => ['class' => 'button']])
-        ->getForm();
+            ->add('title', TextType::class)
+            ->add('latitude', NumberType::class)
+            ->add('longitude', NumberType::class)
+            ->add('radius', IntegerType::class)
+            ->add('min_price', MoneyType::class)
+            ->add('max_price', MoneyType::class)
+            ->add('save', SubmitType::class, ['label' => 'Save Search', 'attr' => ['class' => 'button']])
+            ->getForm();
     }
 }

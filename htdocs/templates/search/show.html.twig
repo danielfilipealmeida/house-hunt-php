@@ -23,6 +23,20 @@
                 </tr>
 
                 <tr>
+                    <th>Location</th>
+                    <td>{{ search.latitude }}, {{ search.longitude }}</td>
+                </tr>
+
+                <tr>
+                    <th>Radius</th>
+                    <td>{{ search.radius }}</td>
+                </tr>
+
+                <tr>
+                    <th>Price Band</th>
+                    <td>{{ search.minPrice|localizedcurrency('EUR') }} - {{ search.maxPrice|localizedcurrency('EUR') }}</td>
+                </tr>
+                <tr>
                     <th>Configuration</th>
                     <td>
                         <dl>
