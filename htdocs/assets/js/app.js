@@ -12,10 +12,18 @@ require('leaflet/dist/leaflet.css');
 
 const $ = require('jquery');
 require('leaflet');
-const maps = require('./maps');
+const Maps = require('./maps');
 
 
 
 $('document').ready(() => {
-    maps.create(L, 'mapid', 51.505, -0.09);
-})
+    /** todo: move this into a system constant */
+    const token = 'pk.eyJ1IjoiZGFuaWVsZmlsaXBlYSIsImEiOiJjand5NHczMGwwYTB6M3lwY3lidGp2dDByIn0.8MeQEHRq4QCRhSCxnbOfAw';
+    const map = new Maps(L, token);
+
+    map.setId('mapid')
+        .setCoordinates(51.505, -0.09)
+        .setZoom(13)
+        .setMaxZoom(20)
+        .create();
+});

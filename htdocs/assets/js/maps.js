@@ -1,20 +1,82 @@
 /**
- * Generates a Leaflet.js map
- * @param id
- * @param latitude
- * @param longitude
+ * Embed MapBox maps
  */
-let create = (L, id, latitude, longitude) => {
-    //console.log(L.map);
-    let token = 'pk.eyJ1IjoiZGFuaWVsZmlsaXBlYSIsImEiOiJjand5NHczMGwwYTB6M3lwY3lidGp2dDByIn0.8MeQEHRq4QCRhSCxnbOfAw';
-    let map = L.map(id).setView([latitude, longitude], 13);
-    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + token, {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 18,
-        id: 'mapbox.streets'
-    }).addTo(map);
-};
+class Map {
+    /**
+     *
+     * @param L
+     */
+    constructor(L, token) {
+        this.L = L;
+        this.token = token;
 
-module.exports = {
-  create
-};
+        this.zoom = 10;
+        this.maxZoom = 20;
+        this.latitude = 0;
+        this.longitude = 0;
+        this.id = 'mapid';
+
+        this.MAPBOX_BASE_URL = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=';
+    }
+
+    /**
+     *
+     * @param latitude
+     * @param longitude
+     * @returns {Map}
+     */
+    setCoordinates(latitude, longitude) {
+        this.latitude = latitude;
+        this.longitude = longitude;
+
+        return this;
+    }
+
+    /**
+     *
+     * @param id
+     * @returns {Map}
+     */
+    setId(id) {
+        this.id = id;
+
+        return this;
+    }
+
+    /**
+     *
+     * @param zoom
+     * @returns {Map}
+     */
+    setZoom(zoom) {
+        this.zoom = zoom;
+
+        return this;
+    }
+
+    /**
+     *
+     * @param maxZoom
+     * @returns {Map}
+     */
+    setMaxZoom(maxZoom) {
+        this.maxZoom = maxZoom;
+
+        return this;
+    }
+
+
+    /**
+     *
+     */
+    create () {
+        this.map = this.L.map(this.id).setView([this.latitude, this.longitude], this.zoom);
+        this.L.tileLayer(this.MAPBOX_BASE_URL + this.token, {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: this.maxZoom,
+            id: 'mapbox.streets'
+        }).addTo(this.map);
+    }
+}
+
+module.exports = Map;
