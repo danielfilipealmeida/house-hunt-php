@@ -1,0 +1,16 @@
+{
+  "name": "house-hunt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Daniel Almeida",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bulma": "^0.7.5",
+    "leaflet": "^1.5.1"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.27.0",
+    "webpack-notifier": "^1.6.0"
+  }
+}

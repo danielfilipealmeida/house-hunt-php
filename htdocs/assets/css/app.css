@@ -1,0 +1,13 @@
+body {
+}
+
+dl>dt {
+    font-weight: bolder;
+}
+
+dl>dd {
+}
+
+#mapid {
+    height: 280px;
+}
