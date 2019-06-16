@@ -1,5 +1,12 @@
 {% extends 'form_div_layout.html.twig' %}
 
+
+{% block map_widget %}
+    {% spaceless %}
+        <div id="mapid"></div>
+    {% endspaceless %}
+{% endblock %}
+
 {% block form_row %}
 {% spaceless %}
     <div class="field">
@@ -25,3 +32,4 @@
     {% set label_attr = label_attr|merge({'class': (label_attr.class|default('') ~ ' label')|trim}) %}
      {{- parent() -}}
 {%- endblock form_label -%}
+

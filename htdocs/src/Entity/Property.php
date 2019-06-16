@@ -21,6 +21,12 @@ class Property
      */
     private $title;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\PropertyType")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $type;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -34,6 +40,18 @@ class Property
     public function setTitle(string $title): self
     {
         $this->title = $title;
+
+        return $this;
+    }
+
+    public function getType(): ?PropertyType
+    {
+        return $this->type;
+    }
+
+    public function setType(?PropertyType $type): self
+    {
+        $this->type = $type;
 
         return $this;
     }

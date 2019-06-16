@@ -14,7 +14,7 @@
 /htdocs/.web-server-pid
 ###< symfony/web-server-bundle ###
 
-/htdocs/node_modules/
+/htdocs/node_modules
 
 .idea/
 

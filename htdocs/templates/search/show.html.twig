@@ -2,53 +2,53 @@
 
 {% block body %}
 
-        <h1 class="title">Search: {{ search.title }} (ID: {{ search.id }})</h1>
-   
-       <div class="field has-addons">
-            <div class="control">
-                <a class="button is-small " href=" {{ path("search") }}"><< Back to list</a>
-            </div>
+    <h1 class="title">Search: {{ search.title }} (ID: {{ search.id }})</h1>
+
+    <div class="field has-addons">
+        <div class="control">
+            <a class="button is-small " href=" {{ path("search") }}"><< Back to list</a>
         </div>
+    </div>
 
-        <table class="table is-fullwidth is-hoverable is-striped">
-            <tbody>
-                <tr>
-                    <th>Id</th>
-                    <td>{{ search.id }}</td>
-                </tr>
+    <table class="table is-fullwidth is-hoverable is-striped">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ search.id }}</td>
+        </tr>
 
-                <tr>
-                    <th>Title</th>
-                    <td>{{ search.title }}</td>
-                </tr>
+        <tr>
+            <th>Title</th>
+            <td>{{ search.title }}</td>
+        </tr>
 
-                <tr>
-                    <th>Location</th>
-                    <td>{{ search.latitude }}, {{ search.longitude }}</td>
-                </tr>
+        <tr>
+            <th>Location</th>
+            <td>{{ search.latitude }}, {{ search.longitude }}</td>
+        </tr>
 
-                <tr>
-                    <th>Radius</th>
-                    <td>{{ search.radius }}</td>
-                </tr>
+        <tr>
+            <th>Radius</th>
+            <td>{{ search.radius }}</td>
+        </tr>
 
-                <tr>
-                    <th>Price Band</th>
-                    <td>{{ search.minPrice|localizedcurrency('EUR') }} - {{ search.maxPrice|localizedcurrency('EUR') }}</td>
-                </tr>
-                <tr>
-                    <th>Configuration</th>
-                    <td>
-                        <dl>
+        <tr>
+            <th>Price Band</th>
+            <td>{{ search.minPrice|localizedcurrency('EUR') }} - {{ search.maxPrice|localizedcurrency('EUR') }}</td>
+        </tr>
+{#        <tr>#}
+{#            <th>Configuration</th>#}
+{#            <td>#}
+{#                <dl>#}
 
-                        {% for key, value in search.configuration|json_decode  %}
-                            <dt>{{ key }}</dt>
-                            <dd>{{ value }}</dd>
-                        {% endfor %}
-                        </dl>
-                        </td>
-                </tr>
-            </tbody>
-        </table>
+{#                    {% for key, value in search.configuration|json_decode %}#}
+{#                        <dt>{{ key }}</dt>#}
+{#                        <dd>{{ value }}</dd>#}
+{#                    {% endfor %}#}
+{#                </dl>#}
+{#            </td>#}
+{#        </tr>#}
+        </tbody>
+    </table>
 
 {% endblock %}

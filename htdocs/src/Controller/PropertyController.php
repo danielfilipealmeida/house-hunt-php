@@ -61,6 +61,10 @@ class PropertyController extends AbstractController
 
     /**
      * @Route("/property_edit/{id}", name="property_edit", requirements={"id"="\d+"})
+     * @param Property $property
+     * @param Request $request
+     * @param Breadcrumb $breadcrumb
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
     public function edit(
         Property $property,
@@ -70,13 +74,13 @@ class PropertyController extends AbstractController
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
 
         if (!$property) {
-            throw $this->createNotFoundException('No property found for id '.$id);
+            throw $this->createNotFoundException("No property found");
         }
 
         $form = $this->createFormForProperty($property);
 
         $breadcrumb->setPageTitle($property->getTitle());
-        $breadcrumb->add('All Properties', $this->generateUrl('property'));
+        $breadcrumb->add('All Properties', $this->generateUrl("property"));
 
         $form->handleRequest($request);
 

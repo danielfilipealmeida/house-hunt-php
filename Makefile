@@ -81,9 +81,17 @@ setup-doctrine: ##@doctrine Drops and re-creates the database with data
 	docker-compose exec $(CONT_WEB) sh /var/www/html/setup-doctrine.sh
 .PHONY: setup-doctrine
 
+create-test-database: ##@doctrine Creates or edits an entity
+	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) -e "CREATE DATABASE IF NOT EXISTS $(DATABASE_TEST);"
+.PHONY: create-test-database
+
 create-migration: ##@doctrine Creates a new migration
 	make console COM="make:migration"
 .PHONY: create-migration
+
+migrate: ##@doctrine Execute new migrations
+	make console COM=" doctrine:migrations:migrate"
+.PHONY: migrate
 
 load-seed-data: ##@doctrine Load Development Database Fixtures
 	make console COM="doctrine:fixtures:load -n"
@@ -110,11 +118,11 @@ clean: ##@servers Tears down all containers
 .PHONY: clean
 
 start: ##@servers Starts all containers
-	docker-compose up -d
+	docker-compose start
 .PHONY: start
 
 stop: ##@servers Stops all containers
-	docker-compose down
+	docker-compose stop
 .PHONY: stop
 
 reload: ##@servers Reloads all containers
@@ -166,10 +174,9 @@ drop-database: ##@database Deletes the database
 	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) -e "DROP DATABASE IF EXISTS $(DATABASE);"
 .PHONY: drop-database
 
-create-test-database:
-	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) -e "CREATE DATABASE IF NOT EXISTS $(DATABASE_TEST);"
-.PHONY: create-test-database
-
+entity:
+	make console COM="make:entity"
+.PHONY: entity
 
 create-database: ##@database Creates the database
 	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) -e "CREATE DATABASE IF NOT EXISTS $(DATABASE);"
@@ -179,14 +186,17 @@ fetchdata: ##@commands Use commands to fetch all data from APIs
 	make console COM="idealista:fetch"
 .PHONY: fetchdata
 
-
 cache-clear: ##@dev Clear the cache
 	make console COM="cache:clear"
 .PHONY: cache-clear
 
-unit-tests: ##@testing Run the unit tests
-	make run COM="bin/phpunit tests/unit/"
-.PHONY: unit-tests
+encore: ##@dev Run Encore to build the assets
+	(cd htdocs && yarn encore dev)
+.PHONY: encore
+
+encore-watch: ##@dev Watch changes and run Encore to build the assets
+	(cd htdocs && yarn encore dev --watch)
+.PHONY: encore-watch
 
 #acceptance-tests: ##@testing Run the acceptance tests
 #	make run COM="vendor/bin/codecept run acceptance"

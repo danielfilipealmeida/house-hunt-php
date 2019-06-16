@@ -2,9 +2,12 @@
 
 namespace App\Controller;
 
+use App\Entity\PropertyType;
 use App\Entity\Search;
+use App\Form\Type\MapType;
 use App\Service\Breadcrumb;
 use Doctrine\DBAL\Types\FloatType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\CurrencyType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\MoneyType;
@@ -66,6 +69,9 @@ class SearchController extends AbstractController
 
     /**
      * @Route("/search/new", name="search_new")
+     * @param Breadcrumb $breadcrumb
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
     public function new(
         Breadcrumb $breadcrumb,
@@ -84,7 +90,8 @@ class SearchController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $search = $form->getData();
 
-            $search = setConfigurationField($search);
+            /** @var Search $search */
+            $search = $this->setConfigurationField($search);
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($search);
@@ -109,8 +116,64 @@ class SearchController extends AbstractController
         );
     }
 
-    private function setConfigurationField($search) {
-        $search['configuration'] = '';
+    /**
+     * @Route("/search_edit/{id}", name="search_edit", requirements={"id"="\d+"})
+     * @param Search $search
+     * @param Request $request
+     * @param Breadcrumb $breadcrumb
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     */
+    public function edit(
+        Search $search,
+        Request $request,
+        Breadcrumb $breadcrumb
+    ) {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+
+        if (!$search) {
+            throw $this->createNotFoundException("No search found");
+        }
+
+        /** @var  $form */
+        $form = $this->createFormForSearch($search);
+
+        $breadcrumb->setPageTitle($search->getTitle());
+        $breadcrumb->add('All Searches', $this->generateUrl("search"));
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $search = $form->getData();
+
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($search);
+            $entityManager->flush();
+
+            return $this->redirectToRoute(
+                "search_show",
+                [
+                    'id' => $search->getId(),
+                    'breadcrumb' => $breadcrumb->get(),
+                ]
+            );
+        }
+
+        return $this->render(
+            'search/form.html.twig',
+            [
+                'form' => $form->createView(),
+                'breadcrumb' => $breadcrumb->get(),
+            ]
+        );
+    }
+
+    /**
+     * @param Search $search
+     * @return Search
+     */
+    private function setConfigurationField(Search $search) : Search
+    {
+        $search->setConfiguration('{}');
         return $search;
     }
 
@@ -124,8 +187,12 @@ class SearchController extends AbstractController
     {
         return $this->createFormBuilder($search)
             ->add('title', TextType::class)
-            ->add('latitude', NumberType::class)
-            ->add('longitude', NumberType::class)
+            ->add('property_type', EntityType::class,
+                [
+                    'class' => PropertyType::class,
+                    'choice_label' => 'title'
+                ])
+            ->add('coordinates', MapType::class)
             ->add('radius', IntegerType::class)
             ->add('min_price', MoneyType::class)
             ->add('max_price', MoneyType::class)

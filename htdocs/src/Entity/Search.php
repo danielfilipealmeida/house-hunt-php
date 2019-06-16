@@ -34,16 +34,6 @@ class Search
     private $searchResults;
 
     /**
-     * @ORM\Column(type="float")
-     */
-    private $latitude;
-
-    /**
-     * @ORM\Column(type="float")
-     */
-    private $longitude;
-
-    /**
      * @ORM\Column(type="integer")
      */
     private $radius;
@@ -57,6 +47,17 @@ class Search
      * @ORM\Column(type="integer")
      */
     private $maxPrice;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\PropertyType")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $property_type;
+
+    /**
+     * @ORM\Column(type="array")
+     */
+    private $coordinates = [];
 
     public function __construct()
     {
@@ -179,6 +180,30 @@ class Search
     public function setMaxPrice(int $maxPrice): self
     {
         $this->maxPrice = $maxPrice;
+
+        return $this;
+    }
+
+    public function getPropertyType(): ?PropertyType
+    {
+        return $this->property_type;
+    }
+
+    public function setPropertyType(?PropertyType $property_type): self
+    {
+        $this->property_type = $property_type;
+
+        return $this;
+    }
+
+    public function getCoordinates(): ?array
+    {
+        return $this->coordinates;
+    }
+
+    public function setCoordinates(array $coordinates): self
+    {
+        $this->coordinates = $coordinates;
 
         return $this;
     }

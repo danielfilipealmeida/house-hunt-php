@@ -23,6 +23,7 @@
         "symfony/twig-bundle": "*",
         "symfony/validator": "*",
         "symfony/web-link": "*",
+        "symfony/webpack-encore-bundle": "^1.6",
         "symfony/yaml": "*",
         "twig/extensions": "^1.5"
     },
