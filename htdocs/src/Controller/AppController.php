@@ -13,7 +13,6 @@ class AppController extends AbstractController
      */
     public function homepage(Breadcrumb $breadcrumb)
     {
-        dump('!!!!');
         $breadcrumb->setPageTitle('Homepage');
 
         return $this->render('static/homepage.html.twig', [

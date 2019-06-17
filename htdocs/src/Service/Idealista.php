@@ -62,6 +62,7 @@ class Idealista
      * Constructor.
      *
      * @param Memcached $memcached
+     * @param Client $client
      */
     public function __construct(
         Memcached $memcached,

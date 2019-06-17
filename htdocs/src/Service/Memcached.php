@@ -59,11 +59,12 @@ class Memcached {
      *
      * @param string $key
      * @param [type] $value
+     * @param int $expiration
      * @return void
      */
-    public function set(string $key, $value)
+    public function set(string $key, $value, $expiration = 0): void
     {
-        $this->memcached->set($key, $value);
+        $this->memcached->set($key, $value, $expiration);
     }
 
 }

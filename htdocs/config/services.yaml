@@ -74,3 +74,13 @@ services:
         arguments:
             - '@App\Repository\UserRepository'
             - '@doctrine.orm.entity_manager'
+
+    App\Service\Mapbox:
+        arguments:
+            - '@App\Service\Memcached'
+            - '@guzzle'
+        calls:
+            - method: setToken
+              arguments:
+                  - '%app.mapbox.token%'
+

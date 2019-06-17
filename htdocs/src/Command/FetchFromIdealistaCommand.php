@@ -61,14 +61,12 @@ class FetchFromIdealistaCommand extends Command
      *
      * @return array
      */
-    protected function getSearchConfigurationArrayFromSearchId($id)
+    protected function getSearchConfigurationArrayFromSearchId($id): array
     {
         /** @var Search $search */
-        /** @var array $searchConfigurationArray */
         $search = $this->searchRepository->findOneBy(['id' => $id]);
-        $searchConfigurationArray = \json_decode($search->getConfiguration(), true);
 
-        return $searchConfigurationArray;
+        return \json_decode($search->getConfiguration(), true);
     }
 
     /**
