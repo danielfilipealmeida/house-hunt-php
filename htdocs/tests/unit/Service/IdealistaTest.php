@@ -18,7 +18,8 @@ class IdealistaTest extends TestCase
         $this->assertTrue(1 == 1);
     }
 
-    public function testGetCredentials() {
+    public function testGetCredentials(): void
+    {
         $memcached = $this->createMock(Memcached::class);
         $client = $this->createMock(Client::class);
         
@@ -32,7 +33,7 @@ class IdealistaTest extends TestCase
         $this->assertEquals('c29tZV9rZXk6c29tZV9zZWNyZXQ=', $idealista->getCredentials());
     }
 
-    public function testGetHeaders()
+    public function testGetHeaders():void
     {
         $memcached = $this->createMock(Memcached::class);
         $client = $this->createMock(Client::class);
@@ -50,7 +51,7 @@ class IdealistaTest extends TestCase
         $this->assertContains('Basic c29tZV9rZXk6c29tZV9zZWNyZXQ=', $headers);
     }
 
-    public function testGetBearerCodeFromServer()
+    public function testGetBearerCodeFromServer(): void
     {
         /** @var Memcached|MockObject */
         $memcachedMock = $this->createMock(Memcached::class);
@@ -194,9 +195,11 @@ class IdealistaTest extends TestCase
         $search = new Search();
 
         /** @var Memcached $memcached */
+        /** @var Client $client */
         $memcached = $this->createMock(Memcached::class);
+        $client    = $this->createMock(Client::class);
 
-        $idealista = new Idealista($memcached);
+        $idealista = new Idealista($memcached, $client);
         $result = $idealista->mapToIdealistSearchArray($search);
     }
 }

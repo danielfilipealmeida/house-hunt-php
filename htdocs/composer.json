@@ -37,7 +37,8 @@
         "symfony/phpunit-bridge": "*",
         "symfony/profiler-pack": "*",
         "symfony/test-pack": "^1.0",
-        "symfony/web-server-bundle": "*"
+        "symfony/web-server-bundle": "*",
+      "ext-json": "*"
     },
     "config": {
         "preferred-install": {
