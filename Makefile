@@ -210,3 +210,7 @@ all-codeception-tests: ##@testing Run all tests using codeception
 acceptance-tests: ##@testing Run Acceptance tests. example: make acceptance-tests FILTER="FirstCest:canLogin"
 	make run COM="vendor/bin/codecept run acceptance $(FILTER)"
 .PHONY: acceptance-tests
+
+unit-tests: ##@testing Run Unit tests. example: make unit-tests FILTER="FirstCest:canLogin"
+	make run COM="vendor/bin/codecept run unit $(FILTER)"
+.PHONY: unit-tests

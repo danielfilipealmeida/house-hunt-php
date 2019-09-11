@@ -24,7 +24,9 @@
 
         <tr>
             <th>Location</th>
-            <td>{{ search.latitude }}, {{ search.longitude }}</td>
+            <td>{{ search.coordinates|geo_to_string }}
+            {% dump(search) %}
+            </td>
         </tr>
 
         <tr>

@@ -22,5 +22,5 @@ RUN docker-php-ext-install -j$(nproc) zip \
 
 RUN ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/rewrite.load
 
-// set memcached service to run on boot
+# set memcached service to run on boot
 RUN update-rc.d memcached defaults

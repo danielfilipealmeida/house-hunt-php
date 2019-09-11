@@ -31,6 +31,9 @@ services:
         #     VIRTUAL_HOST: "househunt"
         #     PHP_IDE_CONFIG: "serverName=Test"
         restart: "no"
+        depends_on:
+            - db
+        # todo: create an entrypoint script to do stuff like starting memcached (that isn't running at the moment!)
 
     db:
         image:  mariadb
@@ -50,6 +53,8 @@ services:
         environment:
             - VIRTUAL_HOST=adminer
         restart: "no"
+        depends_on:
+            - db
 
     mailcatcher:
         image: schickling/mailcatcher
@@ -63,7 +68,7 @@ services:
         ports:
         - "4444:4444"
 
-    chrome:
+    selenium-chrome:
         image: selenium/node-chrome:3.141.59-mercury
         volumes:
             - /dev/shm:/dev/shm

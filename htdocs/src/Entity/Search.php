@@ -11,6 +11,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Search
 {
+    /** @var int DEFAULT_LATITUDE */
+    /** @var int DEFAULT_LONGITUDE */
+    private const DEFAULT_LATITUDE = 0;
+    private const DEFAULT_LONGITUDE = 0;
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -61,6 +66,10 @@ class Search
 
     public function __construct()
     {
+        $this->coordinates = [
+            'latitude' => self::DEFAULT_LATITUDE,
+            'longitude' => self::DEFAULT_LONGITUDE
+        ];
         $this->searchResults = new ArrayCollection();
     }
 
@@ -126,24 +135,24 @@ class Search
 
     public function getLatitude(): ?float
     {
-        return $this->latitude;
+        return $this->coordinates['latitude'];
     }
 
     public function setLatitude(float $latitude): self
     {
-        $this->latitude = $latitude;
+        $this->coordinates['latitude'] = $latitude;
 
         return $this;
     }
 
     public function getLongitude(): ?float
     {
-        return $this->longitude;
+        return $this->coordinates['longitude'];
     }
 
     public function setLongitude(float $longitude): self
     {
-        $this->longitude = $longitude;
+        $this->coordinates['longitude'] = $longitude;
 
         return $this;
     }

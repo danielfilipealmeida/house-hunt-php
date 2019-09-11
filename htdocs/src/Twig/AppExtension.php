@@ -12,6 +12,7 @@ class AppExtension extends AbstractExtension
         return [
             new TwigFilter('cast_to_array', [$this, 'castToArray']),
             new TwigFilter('json_decode', [$this, 'jsonDecode']),
+            new TwigFilter('geo_to_string', [$this, 'geoToString']),
         ];
     }
 
@@ -37,5 +38,24 @@ class AppExtension extends AbstractExtension
     public function jsonDecode(string $string): array
     {
         return \json_decode($string, true);
+    }
+
+    /**
+     * Converts an array containing geolocation coordinates to a printable string.
+     * TODO: i18n, translatable constant strings
+     *
+     * @param array $geoLocation
+     *
+     * @return string
+     */
+    public function geoToString(array $geoLocation): string
+    {
+        return implode(
+            ', ',
+            [
+                $geoLocation['latitude'] ?? 'unknown latitude',
+                $geoLocation['longitude'] ?? 'unknown longitude'
+            ]
+        );
     }
 }

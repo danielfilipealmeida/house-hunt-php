@@ -3,9 +3,13 @@
 
 {% block map_widget %}
     {% spaceless %}
-        <div id="mapid"></div>
+        {#<div id="mapid"></div>#}s
+        <input type="text" id="{{ id }}" name="{{ full_name }}" value="">
+        {{ dump(data) }}
+        {{ dump(_context|keys) }}
     {% endspaceless %}
 {% endblock %}
+
 
 {% block form_row %}
 {% spaceless %}
@@ -16,7 +20,7 @@
             {{ form_widget(form, {'attr': {'class' : 'input'}}) }}
         </div>
         {{ form_help(form) }}
-    </div>
+     </div>
 {% endspaceless %}
 {% endblock %}
 

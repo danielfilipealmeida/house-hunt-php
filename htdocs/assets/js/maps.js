@@ -1,3 +1,5 @@
+var $ = require('jquery');
+
 /**
  * Embed MapBox maps
  */
@@ -77,6 +79,23 @@ class Map {
             maxZoom: this.maxZoom,
             id: 'mapbox.streets'
         }).addTo(this.map);
+
+        this.map.on('click', function(ev) {
+            const input = $('#' + this.id).closest('input');
+            const latlng = ev.latlng;
+            input.val([latlng.lat, latlng.lng].join(','));
+
+
+
+            /*
+            const centerPosition = ev.target._lastCenter;
+
+            if (typeof centerPosition == null) return;
+
+
+
+             */
+        }.bind(this));
     }
 }
 
