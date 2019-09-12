@@ -3,10 +3,10 @@
 
 {% block map_widget %}
     {% spaceless %}
-        {#<div id="mapid"></div>#}s
-        <input type="text" id="{{ id }}" name="{{ full_name }}" value="">
-        {{ dump(data) }}
-        {{ dump(_context|keys) }}
+        <div id="mapid"></div>
+        <input type="text" id="{{ id }}" name="{{ full_name }}" value="{{ data|geo_to_string }}">
+        {#{ dump(data|geo_to_string) }#}
+        {#{ dump(_context|keys) }#}
     {% endspaceless %}
 {% endblock %}
 

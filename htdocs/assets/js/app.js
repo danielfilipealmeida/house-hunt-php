@@ -14,16 +14,23 @@ const $ = require('jquery');
 require('leaflet');
 const Maps = require('./maps');
 
-
-
-$('document').ready(() => {
+const setupMap = (id) => {
     /** todo: move this into a system constant */
     const token = 'pk.eyJ1IjoiZGFuaWVsZmlsaXBlYSIsImEiOiJjand5NHczMGwwYTB6M3lwY3lidGp2dDByIn0.8MeQEHRq4QCRhSCxnbOfAw';
     const map = new Maps(L, token);
 
-    map.setId('mapid')
-        .setCoordinates(51.505, -0.09)
+    const coordinates = $('#' + id).next().val().split(',');
+
+    map.setId(id)
+        .setCoordinates(coordinates[0], coordinates[1])
         .setZoom(13)
         .setMaxZoom(20)
         .create();
+};
+
+
+$('document').ready(() => {
+    setupMap('mapid');
 });
+
+
