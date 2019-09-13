@@ -48,13 +48,17 @@ class AppExtension extends AbstractExtension
      *
      * @return string
      */
-    public function geoToString(array $geoLocation): string
+    public function geoToString(?array $geoLocation): string
     {
+        if (!$geoLocation) {
+            return '0,0';
+        }
+
         return implode(
             ', ',
             [
-                $geoLocation['latitude'] ?? 'unknown latitude',
-                $geoLocation['longitude'] ?? 'unknown longitude'
+                $geoLocation['latitude'] ?? '0',
+                $geoLocation['longitude'] ?? '0'
             ]
         );
     }

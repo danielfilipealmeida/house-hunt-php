@@ -13,6 +13,8 @@ use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\MoneyType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\FormInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Form;
@@ -71,7 +73,8 @@ class SearchController extends AbstractController
      * @Route("/search/new", name="search_new")
      * @param Breadcrumb $breadcrumb
      * @param Request $request
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     *
+     * @return RedirectResponse|Response
      */
     public function new(
         Breadcrumb $breadcrumb,
@@ -121,7 +124,8 @@ class SearchController extends AbstractController
      * @param Search $search
      * @param Request $request
      * @param Breadcrumb $breadcrumb
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     *
+     * @return RedirectResponse|Response
      */
     public function edit(
         Search $search,
@@ -131,14 +135,14 @@ class SearchController extends AbstractController
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
 
         if (!$search) {
-            throw $this->createNotFoundException("No search found");
+            throw $this->createNotFoundException('No search found');
         }
 
         /** @var  $form */
         $form = $this->createFormForSearch($search);
 
         $breadcrumb->setPageTitle($search->getTitle());
-        $breadcrumb->add('All Searches', $this->generateUrl("search"));
+        $breadcrumb->add('All Searches', $this->generateUrl('search'));
 
         $form->handleRequest($request);
 
@@ -150,7 +154,7 @@ class SearchController extends AbstractController
             $entityManager->flush();
 
             return $this->redirectToRoute(
-                "search_show",
+                'search_show',
                 [
                     'id' => $search->getId(),
                     'breadcrumb' => $breadcrumb->get(),
@@ -185,7 +189,8 @@ class SearchController extends AbstractController
      */
     public function createFormForSearch(Search $search): FormInterface
     {
-        return $this->createFormBuilder($search)
+        /** @var FormInterface $form */
+        $form = $this->createFormBuilder($search)
             ->add('title', TextType::class)
             ->add('property_type', EntityType::class,
                 [
@@ -198,5 +203,7 @@ class SearchController extends AbstractController
             ->add('max_price', MoneyType::class)
             ->add('save', SubmitType::class, ['label' => 'Save Search', 'attr' => ['class' => 'button']])
             ->getForm();
+
+        return $form;
     }
 }

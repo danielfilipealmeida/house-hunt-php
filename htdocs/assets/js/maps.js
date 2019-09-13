@@ -5,8 +5,9 @@ var $ = require('jquery');
  */
 class Map {
     /**
-     *
+     * Map class Construvtor
      * @param L
+     * @param token
      */
     constructor(L, token) {
         this.L = L;
@@ -90,7 +91,8 @@ class Map {
 
         this.map.on('move', function(event) {
             let center = event.target.getCenter();
-            $('#' + this.id).next().val(`${center.lat}, ${center.lng}`);
+            $('#' + this.id).next().val(center.lat);
+            $('#' + this.id).next().next().val(center.lng);
         }.bind(this))
     }
 }

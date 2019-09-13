@@ -118,7 +118,10 @@ clean: ##@servers Tears down all containers
 .PHONY: clean
 
 start: ##@servers Starts all containers
-	docker-compose start
+	#docker-compose start
+	docker-compose up --no-start
+	docker-compose up -d db
+	docker-compose up -d web adminer mailcatcher selenium-hub reverseproxy
 .PHONY: start
 
 stop: ##@servers Stops all containers

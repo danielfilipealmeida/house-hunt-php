@@ -19,10 +19,11 @@ const setupMap = (id) => {
     const token = 'pk.eyJ1IjoiZGFuaWVsZmlsaXBlYSIsImEiOiJjand5NHczMGwwYTB6M3lwY3lidGp2dDByIn0.8MeQEHRq4QCRhSCxnbOfAw';
     const map = new Maps(L, token);
 
-    const coordinates = $('#' + id).next().val().split(',');
+    const latitude = $('#' + id).next().val();
+    const longitude = $('#' + id).next().next().val();
 
     map.setId(id)
-        .setCoordinates(coordinates[0], coordinates[1])
+        .setCoordinates(latitude, longitude)
         .setZoom(13)
         .setMaxZoom(20)
         .create();
