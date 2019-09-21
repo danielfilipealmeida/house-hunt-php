@@ -15,7 +15,7 @@ class FirstCest
     /** @var UserPasswordEncoderInterface  */
     private $passwordEncoder;
 
-    //https://codeception.com/docs/07-AdvancedUsage
+    // https://codeception.com/docs/07-AdvancedUsage
 
     /**
      * @param UserPasswordEncoder $passwordEncoder

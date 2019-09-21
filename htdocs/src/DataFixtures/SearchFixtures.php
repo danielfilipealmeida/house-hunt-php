@@ -18,9 +18,9 @@ class SearchFixtures extends Fixture implements DependentFixtureInterface
         'Apartments in Faro' => [
             'latitude' => 37.019356,
             'longitude' => -7.930440,
-            'radius' => 10,
+            'radius' => 1000,
             'minPrice' => 50000,
-            'maxPrice' => 150000,
+            'maxPrice' => 10000,
             'propertyType' => 'Apartment',
             'configuration' => []
         ]

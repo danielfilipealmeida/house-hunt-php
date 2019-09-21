@@ -8,6 +8,9 @@
 // any CSS you require will output into a single css file (app.css in this case)
 require('bulma/css/bulma.css');
 require('../css/app.css');
+
+
+
 require('leaflet/dist/leaflet.css');
 
 const $ = require('jquery');
@@ -15,18 +18,14 @@ require('leaflet');
 const Maps = require('./maps');
 
 const setupMap = (id) => {
+    if (!$('#' + id).length) return;
+
     /** todo: move this into a system constant */
     const token = 'pk.eyJ1IjoiZGFuaWVsZmlsaXBlYSIsImEiOiJjand5NHczMGwwYTB6M3lwY3lidGp2dDByIn0.8MeQEHRq4QCRhSCxnbOfAw';
     const map = new Maps(L, token);
 
-    const latitude = $('#' + id).next().val();
-    const longitude = $('#' + id).next().next().val();
-
-    map.setId(id)
-        .setCoordinates(latitude, longitude)
-        .setZoom(13)
-        .setMaxZoom(20)
-        .create();
+    map.setup(id, '#form_radius')
+         .create();
 };
 
 

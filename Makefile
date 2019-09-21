@@ -9,6 +9,7 @@ CONT_DB=db
 DATABASE=house_hunt
 DATABASE_TEST=$(DATABASE)_test
 DB_PASSWORD=passpass
+CURRENT_BRANCH=$(shell git branch | grep \* | cut -d ' ' -f2)
 
 
 # Add the following 'help' target to your Makefile
@@ -85,6 +86,11 @@ create-test-database: ##@doctrine Creates or edits an entity
 	docker-compose exec $(CONT_DB) mysql --password=$(DB_PASSWORD) -e "CREATE DATABASE IF NOT EXISTS $(DATABASE_TEST);"
 .PHONY: create-test-database
 
+
+dump-database: ##@doctrine Dumps the database into a file
+	docker-compose exec $(CONT_DB) mysqldump --password=$(DB_PASSWORD) $(DATABASE) > db/dumps/$(CURRENT_BRANCH).sql
+.PHONY: dump-database
+
 create-migration: ##@doctrine Creates a new migration
 	make console COM="make:migration"
 .PHONY: create-migration
@@ -121,7 +127,7 @@ start: ##@servers Starts all containers
 	#docker-compose start
 	docker-compose up --no-start
 	docker-compose up -d db
-	docker-compose up -d web adminer mailcatcher selenium-hub reverseproxy
+	docker-compose up -d web adminer mailcatcher selenium-hub selenium-chrome reverseproxy
 .PHONY: start
 
 stop: ##@servers Stops all containers
@@ -217,3 +223,11 @@ acceptance-tests: ##@testing Run Acceptance tests. example: make acceptance-test
 unit-tests: ##@testing Run Unit tests. example: make unit-tests FILTER="FirstCest:canLogin"
 	make run COM="vendor/bin/codecept run unit $(FILTER)"
 .PHONY: unit-tests
+
+functional-tests: ##@testing Run Functional tests. example: make unit-tests FILTER="FirstCest:canLogin"
+	make run COM="vendor/bin/codecept run functional $(FILTER)"
+.PHONY: functional-tests
+
+codecept: ##@testing Execute Codeception command COM="generate:pageobject acceptance Login"
+	make run COM="vendor/bin/codecept $(COM)"
+.PHONY: codecept

@@ -1,5 +1,10 @@
 {% extends 'base.html.twig' %}
 
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('search_edit') }}
+{% endblock %}
+
 {% block body %}
 
     <h1 class="title">New Search</h1>

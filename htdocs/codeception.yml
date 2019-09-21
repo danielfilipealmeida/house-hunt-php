@@ -20,14 +20,15 @@ modules:
         Doctrine2
     config:
         Db:
-            dsn: 'mysql:host=db;dbname=house_hunt'
+            dsn: 'mysql:host=db;dbname=house_hunt_test'
             user: 'root'
             password: 'passpass'
-#            dump: 'tests/_data/empty_database.sql'
-            populate: false
-            cleanup: false # load dump for each test
+            dump: 'tests/_data/test_database.sql'
+            populate: true
+            cleanup: true # load dump for each test
         Symfony:
             - app_path: 'src'
             - environment: 'test'
         Doctrine2:
             depends: Symfony
+            cleanup: true

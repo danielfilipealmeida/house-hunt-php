@@ -27,6 +27,7 @@ services:
             DATABASE: house_hunt
             DATABASE_TEST: house_hunt_test
             DB_PASSWORD: passpass
+            PHP_IDE_CONFIG: "serverName=househunt"
         #     XDEBUG_CONFIG: "idekey=VSCODE"
         #     VIRTUAL_HOST: "househunt"
         #     PHP_IDE_CONFIG: "serverName=Test"

@@ -28,4 +28,8 @@ class SearchTest extends TestCase
         $this->assertEquals(1.0, $search->getLongitude());
     }
 
+    public function testAddNewSearch(): void {
+
+    }
+
 }
