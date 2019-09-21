@@ -84,6 +84,3 @@ services:
               arguments:
                   - '%app.mapbox.token%'
 
-    App\EventListener\SearchPrePersistListener:
-        tags:
-            -  { name: doctrine.event_listener, event: PrePersist }

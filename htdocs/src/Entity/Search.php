@@ -8,6 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\SearchRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
 class Search
 {
@@ -64,6 +65,9 @@ class Search
      */
     private $coordinates = [];
 
+    /**
+     * Search constructor.
+     */
     public function __construct()
     {
         $this->coordinates = [
@@ -73,16 +77,27 @@ class Search
         $this->searchResults = new ArrayCollection();
     }
 
+    /**
+     * @return int|null
+     */
     public function getId(): ?int
     {
         return $this->id;
     }
 
+    /**
+     * @return string|null
+     */
     public function getTitle(): ?string
     {
         return $this->title;
     }
 
+    /**
+     * @param string $title
+     *
+     * @return $this
+     */
     public function setTitle(string $title): self
     {
         $this->title = $title;
@@ -90,11 +105,19 @@ class Search
         return $this;
     }
 
+    /**
+     * @return string|null
+     */
     public function getConfiguration(): ?string
     {
         return $this->configuration;
     }
 
+    /**
+     * @param string|null $configuration
+     *
+     * @return $this
+     */
     public function setConfiguration(?string $configuration): self
     {
         $this->configuration = $configuration;
@@ -110,6 +133,11 @@ class Search
         return $this->searchResults;
     }
 
+    /**
+     * @param SearchResult $searchResult
+     *
+     * @return $this
+     */
     public function addSearchResult(SearchResult $searchResult): self
     {
         if (!$this->searchResults->contains($searchResult)) {
@@ -120,6 +148,11 @@ class Search
         return $this;
     }
 
+    /**
+     * @param SearchResult $searchResult
+     *
+     * @return $this
+     */
     public function removeSearchResult(SearchResult $searchResult): self
     {
         if ($this->searchResults->contains($searchResult)) {
@@ -133,11 +166,19 @@ class Search
         return $this;
     }
 
+    /**
+     * @return float|null
+     */
     public function getLatitude(): ?float
     {
         return $this->coordinates['latitude'];
     }
 
+    /**
+     * @param float $latitude
+     *
+     * @return $this
+     */
     public function setLatitude(float $latitude): self
     {
         $this->coordinates['latitude'] = $latitude;
@@ -145,11 +186,19 @@ class Search
         return $this;
     }
 
+    /**
+     * @return float|null
+     */
     public function getLongitude(): ?float
     {
         return $this->coordinates['longitude'];
     }
 
+    /**
+     * @param float $longitude
+     *
+     * @return $this
+     */
     public function setLongitude(float $longitude): self
     {
         $this->coordinates['longitude'] = $longitude;
@@ -157,11 +206,19 @@ class Search
         return $this;
     }
 
+    /**
+     * @return int|null
+     */
     public function getRadius(): ?int
     {
         return $this->radius;
     }
 
+    /**
+     * @param int $radius
+     *
+     * @return $this
+     */
     public function setRadius(int $radius): self
     {
         $this->radius = $radius;
@@ -169,11 +226,19 @@ class Search
         return $this;
     }
 
+    /**
+     * @return int|null
+     */
     public function getMinPrice(): ?int
     {
         return $this->minPrice;
     }
 
+    /**
+     * @param int $minPrice
+     *
+     * @return $this
+     */
     public function setMinPrice(int $minPrice): self
     {
         $this->minPrice = $minPrice;
@@ -181,11 +246,19 @@ class Search
         return $this;
     }
 
+    /**
+     * @return int|null
+     */
     public function getMaxPrice(): ?int
     {
         return $this->maxPrice;
     }
 
+    /**
+     * @param int $maxPrice
+     *
+     * @return $this
+     */
     public function setMaxPrice(int $maxPrice): self
     {
         $this->maxPrice = $maxPrice;
@@ -193,11 +266,19 @@ class Search
         return $this;
     }
 
+    /**
+     * @return PropertyType|null
+     */
     public function getPropertyType(): ?PropertyType
     {
         return $this->property_type;
     }
 
+    /**
+     * @param PropertyType|null $property_type
+     *
+     * @return $this
+     */
     public function setPropertyType(?PropertyType $property_type): self
     {
         $this->property_type = $property_type;
@@ -205,11 +286,19 @@ class Search
         return $this;
     }
 
+    /**
+     * @return array|null
+     */
     public function getCoordinates(): ?array
     {
         return $this->coordinates;
     }
 
+    /**
+     * @param array $coordinates
+     *
+     * @return $this
+     */
     public function setCoordinates(array $coordinates): self
     {
         $this->coordinates = $coordinates;
@@ -217,4 +306,37 @@ class Search
         return $this;
     }
 
+    /**
+     * @ORM\PrePersist()
+     */
+    public function updateConfigurationBeforeInsert(): void
+    {
+        $this->setConfiguration(json_encode(self::getIdealistaConfiguration($this)));
+    }
+
+    /**
+     * Converts the entity data into a json message used in the Idealista API to search for properties
+     *
+     * @param Search $entity
+     *
+     * @return array
+     */
+    private static function getIdealistaConfiguration(Search $entity): array
+    {
+        /** @var array $result */
+        $result = [
+            'country'      => 'pt',
+            'operation'    => 'sale',
+            'propertyType' => 'homes',
+            'center'       => implode(', ', [$entity->getLatitude(), $entity->getLongitude()]),
+            'distance'     => $entity->radius,
+            'chalet'       => true,
+            'maxPrice'     => $entity->getMaxPrice(),
+            'minPrice'     => $entity->getMinPrice(),
+            'order'        => 'price',
+            'sort'         => 'asc'
+        ];
+
+        return $result;
+    }
 }
