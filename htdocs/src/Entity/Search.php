@@ -308,6 +308,7 @@ class Search
 
     /**
      * @ORM\PrePersist()
+     * @ORM\PreUpdate()
      */
     public function updateConfigurationBeforeInsert(): void
     {
