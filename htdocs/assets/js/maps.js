@@ -93,30 +93,23 @@ class Map {
     /**
      *
      */
-    create () {
-        this.map = this.L.map(this.id, this.mapOptions).setView([this.latitude, this.longitude], this.zoom);
+    create() {
+        this.map = this.L.map(this.id, this.mapOptions)
+            .setView([this.latitude, this.longitude], this.zoom);
+
         this.L.tileLayer(this.MAPBOX_BASE_URL, {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             maxZoom: this.maxZoom,
             id: 'mapbox.streets'
         }).addTo(this.map);
 
-        //let marker = L.marker([this.latitude, this.longitude]).addTo(this.map);
         this.circle = L.circle([this.latitude, this.longitude],
             {
                 color: 'black',
                 radius: this.radius
             }).addTo(this.map);
 
-        /*
-        this.map.on('click', function(ev) {
-            const input = $('#' + this.id).closest('input');
-            const latlng = ev.latlng;
-            input.val([latlng.lat, latlng.lng].join(','));
-        }.bind(this));
-        */
-
-        this.map.on('click', function(event) {
+        this.map.on('click', function (event) {
             //let center = event.target.getCenter();
             let center = event.latlng;
             $('#' + this.id).next().val(center.lat);
@@ -124,7 +117,11 @@ class Map {
 
             this.circle.setLatLng(center)._update();
 
-        }.bind(this))
+        }.bind(this));
+
+        $('input#form_radius').on('change', function (event) {
+            this.circle.setRadius(event.target.value);
+        }.bind(this));
     }
 }
 

@@ -24,12 +24,20 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class SearchController extends AbstractController
 {
+    /** @var float DEFAULT_LATITUDE Faro Latitude */
+    /** @var float DEFAULT_LONGITUDE Faro Longitude */
+    private const DEFAULT_LATITUDE = 37.019356;
+    private const DEFAULT_LONGITUDE = -7.930440;
+
     /**
      * @Route("/search", name="search")
+     * @param Breadcrumb $breadcrumb
+     *
+     * @return Response
      */
     public function index(
         Breadcrumb $breadcrumb
-    ) {
+    ) : Response {
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
 
         $searches = $this->getDoctrine()
@@ -48,8 +56,15 @@ class SearchController extends AbstractController
 
     /**
      * @Route("/search/{id}", name="search_show", requirements={"id"="\d+"})
+     * @param Search     $search
+     * @param Breadcrumb $breadcrumb
+     *
+     * @return Response
      */
-    public function show(Search $search, Breadcrumb $breadcrumb)
+    public function show(
+        Search $search,
+        Breadcrumb $breadcrumb
+    ) : Response
     {
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
 
@@ -197,8 +212,14 @@ class SearchController extends AbstractController
                     'class' => PropertyType::class,
                     'choice_label' => 'title'
                 ])
-            ->add('coordinates', MapType::class)
-            ->add('radius', IntegerType::class)
+            ->add('coordinates', MapType::class,
+                ['data' =>   [
+                    'latitude'  => self::DEFAULT_LATITUDE,
+                    'longitude' => self::DEFAULT_LONGITUDE
+                ]
+                ])
+            ->add('radius', IntegerType::class,
+                ['data' => 1000])
             ->add('min_price', MoneyType::class)
             ->add('max_price', MoneyType::class)
             ->add('save', SubmitType::class, ['label' => 'Save Search', 'attr' => ['class' => 'button']])

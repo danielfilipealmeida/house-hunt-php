@@ -26,7 +26,8 @@
         "symfony/webpack-encore-bundle": "^1.6",
         "symfony/yaml": "*",
         "twig/extensions": "^1.5",
-      "ext-json": "*"
+      "ext-json": "*",
+      "ext-http": "*"
     },
     "require-dev": {
         "codeception/codeception": "^3.0",

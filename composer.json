@@ -1,5 +1,9 @@
 {
     "require": {
         "twig/extensions": "^1.5"
+    },
+    "require-dev": {
+        "league/factory-muffin": "^3.0",
+        "league/factory-muffin-faker": "^2.0"
     }
 }
